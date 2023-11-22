@@ -4,12 +4,25 @@ import info from "../../assets/pics/wedding icons/info.png";
 import map from "../../assets/pics/wedding icons/map.png";
 import birds from "../../assets/pics/wedding icons/birds.png";
 import party from "../../assets/pics/wedding icons/party.png";
+import { useState } from "react";
+import { css } from "aphrodite";
+import styles from "../utils/Animations";
+import { Waypoint } from "react-waypoint";
 
 export default function WhenWhere() {
+  const [animate, setAnimate] = useState(false);
+
   return (
     <div className="bg-myBlue-bgLight text-slate-70 py-20" id="where/when">
       <div className="text-center alex text-6xl italic">Dove & Quando</div>
-      <div className="flex justify-center pt-12">
+      <Waypoint onEnter={() => setAnimate(true)} />
+      <div
+        className={
+          animate
+            ? `${css(styles.fadeInUp)} flex justify-center pt-12`
+            : "flex justify-center pt-12"
+        }
+      >
         <div className="flex gap-7 w-full justify-center flex-col lg:flex-row items-center">
           <div className="lg:w-5/12 md:w-10/12 w-11/12">
             <img src={church} alt="church" className="w-full" />
