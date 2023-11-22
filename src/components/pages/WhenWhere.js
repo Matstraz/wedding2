@@ -24,7 +24,7 @@ export default function WhenWhere() {
         }
       >
         <div className="flex gap-7 w-full justify-center flex-col lg:flex-row items-center">
-          <div className="lg:w-5/12 md:w-10/12 w-11/12">
+          <div className="2xl:w-4/12 lg:w-5/12 md:w-10/12 w-11/12">
             <img src={church} alt="church" className="w-full" />
             <div className="flex flex-col justify-center text-center items-center gap-6 bg-white p-9 relative">
               <img src={birds} alt="birds" className="absolute -top-5 w-20" />
@@ -51,7 +51,7 @@ export default function WhenWhere() {
               </div>
             </div>
           </div>
-          <div className="lg:w-5/12 md:w-10/12 w-11/12">
+          <div className="2xl:w-4/12 lg:w-5/12 md:w-10/12 w-11/12">
             <img src={castle} alt="castle" className="w-full" />
             <div className="flex flex-col justify-center items-center text-center gap-6 bg-white p-9 relative">
               <img src={party} alt="birds" className="absolute -top-11 w-11" />

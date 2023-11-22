@@ -19,6 +19,10 @@ module.exports = {
           900: "#677696",
         },
       },
+      screens: {
+        "2xl": "1700px",
+        // => @media (min-width: 992px) { ... }
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

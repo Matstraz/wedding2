@@ -12,18 +12,10 @@ export default function Navbar() {
       <ul className="hidden lg:flex justify-center text-center items-center gap-12 overflow-clip italic">
         <a href="#home">HOME</a>
         <a href="#newlyweds">GLI SPOSI</a>
-        <a href="#witnesses">I TESTIMONI</a>
         <a href="#where/when">DOVE/QUANDO</a>
+        <a href="#witnesses">I TESTIMONI</a>
         <a href="#timeline">PROGRAMMA</a>
       </ul>
-
-      {/*     <a
-        href="#RSVP"
-        className="p-2 px-3 bg-teal-300 rounded-3xl text-base hover:text-lg text-slate-100 hidden lg:block"
-        onClick={rsvp}
-      >
-        RSVP
-      </a> */}
       <div className="flex justify-center items-center gap-4">
         <RsvpModal />
         {/* BURGER MENU */}
@@ -77,11 +69,6 @@ export default function Navbar() {
                       </a>
                     </li>
                     <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
-                      <a href="#witnesses" onClick={() => setIsMenuOpen(false)}>
-                        I testimoni
-                      </a>
-                    </li>
-                    <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
                       <a
                         href="#where/when"
                         onClick={() => setIsMenuOpen(false)}
@@ -89,6 +76,12 @@ export default function Navbar() {
                         Dove/Quando
                       </a>
                     </li>
+                    <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
+                      <a href="#witnesses" onClick={() => setIsMenuOpen(false)}>
+                        I testimoni
+                      </a>
+                    </li>
+
                     <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
                       <a href="#timeline" onClick={() => setIsMenuOpen(false)}>
                         Programma
