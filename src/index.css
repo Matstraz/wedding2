@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Chopin;
+  src: url(./assets/fonts/ChopinScript.ttf);
+}
+
+.chopin {
+  font-family: "Chopin";
+}
+
+.borded {
+  -webkit-text-stroke: 1px black;
+}
+
+.backHome {
+  background-image: url(./assets/pics/backgrounds/homepage/bg_scritte_piccole.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media all and (max-width: 767px) {
+  .backHome {
+    background-image: url(./assets/pics/backgrounds/homepage/bg_mobile.jpg);
+  }
+}
+
+.bg-church {
+  background-image: url(./assets/pics/backgrounds/church.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-castle {
+  background-image: url(./assets/pics/backgrounds/castle.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stickyBar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
