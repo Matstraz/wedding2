@@ -7,7 +7,7 @@ export default function Witnesses() {
       className="min-h-screen text-slate-70 pt-20 bg-myBlue-bgDark pb-8"
       id="witnesses"
     >
-      <div className="text-center chopin text-6xl italic">
+      <div className="text-center alex text-6xl italic">
         I Testimoni dello Sposo
       </div>
       <div className="pt-8 flex flex-col md:flex-row gap-12 justify-center items-center italic px-2">
@@ -24,7 +24,7 @@ export default function Witnesses() {
           <p>Testimone 3</p>
         </div>
       </div>
-      <div className="text-center chopin text-6xl italic pt-16">
+      <div className="text-center alex text-6xl italic pt-16">
         I Testimoni della Sposa
       </div>
       <div className="py-8 flex flex-col md:flex-row gap-12 justify-center items-center italic px-2">

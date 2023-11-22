@@ -9,12 +9,11 @@ export default function Navbar() {
       <a href="#home">
         <img src={logo} alt="logo" width={50} />
       </a>
-      <ul className="hidden lg:flex justify-center text-center items-center gap-12 overflow-clip">
+      <ul className="hidden lg:flex justify-center text-center items-center gap-12 overflow-clip italic">
         <a href="#home">HOME</a>
         <a href="#newlyweds">GLI SPOSI</a>
         <a href="#witnesses">I TESTIMONI</a>
-        <a href="#church">LA CHIESA</a>
-        <a href="#castle">IL RICEVIMENTO</a>
+        <a href="#where/when">DOVE/QUANDO</a>
         <a href="#timeline">PROGRAMMA</a>
       </ul>
 
@@ -83,13 +82,11 @@ export default function Navbar() {
                       </a>
                     </li>
                     <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
-                      <a href="#church" onClick={() => setIsMenuOpen(false)}>
-                        La chiesa
-                      </a>
-                    </li>
-                    <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
-                      <a href="#castle" onClick={() => setIsMenuOpen(false)}>
-                        Il ricevimento
+                      <a
+                        href="#where/when"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Dove/Quando
                       </a>
                     </li>
                     <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
