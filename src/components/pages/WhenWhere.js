@@ -20,7 +20,7 @@ export default function WhenWhere() {
         className={
           animate
             ? `${css(styles.fadeInUp)} flex justify-center pt-12`
-            : "flex justify-center pt-12"
+            : "hidden"
         }
       >
         <div className="flex gap-7 w-full justify-center flex-col lg:flex-row items-center">

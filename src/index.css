@@ -6,11 +6,11 @@
   font-family: alex;
   src: url(./assets/fonts/AlexBrush.ttf);
 }
-
+/* main font */
 * {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
+/* titles font */
 .alex {
   font-family: "alex";
 }
