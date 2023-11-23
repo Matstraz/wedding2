@@ -46,6 +46,13 @@
   background-size: cover;
 }
 
+.bg-witnesses {
+  background-image: url(./assets/pics/backgrounds/hydrangeas.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .stickyBar {
   position: -webkit-sticky; /* Safari */
   position: sticky;

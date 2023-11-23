@@ -1,45 +1,75 @@
-import foto1 from "../../assets/pics/witnesses/foto1.png";
-import foto2 from "../../assets/pics/witnesses/foto2.png";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function Witnesses() {
+  const witnesses = [
+    [
+      "Mario",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas vel sint commodi repudiandae consequuntur",
+    ],
+    [
+      "Michele",
+      "eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam",
+    ],
+    [
+      "Giovanni",
+      " harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt ",
+    ],
+    [
+      "Fabio",
+      "lias error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt dolorem! Officiis iure rerum v",
+    ],
+    [
+      "Luigi",
+      "As a developer lorem ipsum is a dummy text to write a long textthat you don't want to write",
+    ],
+  ];
+  const responsive = {
+    LargeDesktop: {
+      breakpoint: { max: 4000, min: 3001 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1025 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 501 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 500, min: 0 },
+      items: 1,
+    },
+  };
   return (
-    <div
-      className="min-h-screen text-slate-70 pt-20 bg-myBlue-bgDark pb-8"
-      id="witnesses"
-    >
-      <div className="text-center alex text-6xl italic">
-        I Testimoni dello Sposo
-      </div>
-      <div className="pt-8 flex flex-col md:flex-row gap-12 justify-center items-center italic px-2">
-        <div className="flex flex-col justify-center items-center gap-5">
-          <img src={foto1} className="w-48 md:w-64" alt="foto sposo" />
-          <p>Testimone 3</p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-5">
-          <img src={foto1} className="w-48 md:w-64" alt="foto sposo" />
-          <p>Testimone 3</p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-5">
-          <img src={foto1} className="w-48 md:w-64" alt="foto sposo" />
-          <p>Testimone 3</p>
-        </div>
-      </div>
-      <div className="text-center alex text-6xl italic pt-16">
-        I Testimoni della Sposa
-      </div>
-      <div className="py-8 flex flex-col md:flex-row gap-12 justify-center items-center italic px-2">
-        <div className="flex flex-col justify-center items-center gap-5">
-          <img src={foto2} className="w-48 md:w-64" alt="foto sposo" />
-          <p>Testimone 1</p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-5">
-          <img src={foto2} className="w-48 md:w-64" alt="foto sposo" />
-          <p>Testimone 2</p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-5">
-          <img src={foto2} className="w-48 md:w-64" alt="foto sposo" />
-          <p>Testimone 3</p>
-        </div>
+    <div className="bg-myBlue-bgDark py-14 bg-witnesses" id="witnesses">
+      <div className="text-center alex text-6xl italic ">I Testimoni</div>
+      <div className="">
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlaySpeed={3000}
+          keyBoardControl={true}
+          customTransition="all 1s linear"
+          transitionDuration={500}
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+          autoPlay={true}
+        >
+          {witnesses.map((el, index) => (
+            <div className="flex flex-col justify-center items-center md:px-40 lg:px-80 2xl:px-96 px-10 py-12 gap-4">
+              <p className="text-center italic" key={index}>
+                {el[1]}
+              </p>
+
+              <p>{el[0]}</p>
+            </div>
+          ))}
+        </Carousel>
       </div>
     </div>
   );
