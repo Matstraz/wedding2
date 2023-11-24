@@ -55,7 +55,7 @@ export default function Witnesses() {
           infinite={true}
           autoPlaySpeed={3000}
           keyBoardControl={true}
-          customTransition="all 1s linear"
+          customTransition="all .6s linear"
           transitionDuration={500}
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
           autoPlay={true}
