@@ -47,8 +47,8 @@ export default function Witnesses() {
       <div className="text-center alex text-6xl italic ">I Testimoni</div>
       <div className="">
         <Carousel
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           showDots={true}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
