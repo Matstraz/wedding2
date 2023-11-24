@@ -40,7 +40,7 @@ export default function RsvpModal() {
                   recapiti telefonici
                 </p>
                 <div className="flex justify-center items-center gap-2">
-                  <p className="border-b-2 border-black w-1/4 text-center">
+                  <p className="border-b-2 border-slate-700 w-1/4 text-center">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </p>
                   <p className=" mt-4">{icons.heart}</p>

@@ -8,10 +8,7 @@ import flowers from "../../assets/pics/timeline/flowers.png";
 
 export default function Timeline() {
   return (
-    <div
-      className="min-h-screen bg-myBlue-bgLight text-slate-70 italic pt-20"
-      id="timeline"
-    >
+    <div className="min-h-screen bg-myBlue-bgLight italic pt-20" id="timeline">
       <div className="text-center alex text-6xl italic">Programma</div>
       <div className="flex flex-col items-center pt-12 gap-12 text-center">
         <div div className="grid grid-cols-1 md:grid-cols-4 gap-12 ">
