@@ -66,8 +66,8 @@ export default function WhenWhere() {
                 avevano preso di mira le spiagge siciliane più ricche di pesca.
               </p>
               <p className="italic text-slate-700">
-                Venerdì 5/07/2024 - 15:30 - Chiesa di Santa Maria della Pietà,
-                Piazzetta della Pietà SNC, 90133 Palermo
+                Venerdì 5/07/2024 - 19:30 - Castello di San Nicola L'Arena, San
+                Nicola l'Arena, Palermo
               </p>
               <div className="flex gap-20 md:gap-28">
                 <a href="http://www.castellodisannicola.it/">
