@@ -34,7 +34,7 @@ export default function Homepage() {
         <p className="borded text-3xl italic">15.06.2024</p> */}
       </div>
       <a
-        href="#main"
+        href="#newlyweds"
         className={`${css(
           styles.infiniteBounce
         )} text-black absolute bottom-24 bottom italic borded`}

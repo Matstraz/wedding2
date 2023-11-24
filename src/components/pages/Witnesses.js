@@ -1,7 +1,13 @@
+import { css } from "aphrodite";
+import { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Waypoint } from "react-waypoint";
+import styles from "../utils/Animations";
 
 export default function Witnesses() {
+  const [animate, setAnimate] = useState(false);
+
   const witnesses = [
     [
       "Mario",
@@ -44,8 +50,17 @@ export default function Witnesses() {
   };
   return (
     <div className="bg-myBlue-bgDark py-14 bg-witnesses" id="witnesses">
-      <div className="text-center alex text-6xl italic ">I Testimoni</div>
-      <div className="">
+      <Waypoint onEnter={() => setAnimate(true)} />
+      <div
+        className={
+          animate
+            ? `${css(styles.fadeIn)} text-center alex text-6xl italic `
+            : "hidden"
+        }
+      >
+        I Testimoni
+      </div>
+      <div>
         <Carousel
           swipeable={true}
           draggable={true}

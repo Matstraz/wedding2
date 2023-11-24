@@ -8,9 +8,17 @@ import { Waypoint } from "react-waypoint";
 export default function BrideGroom() {
   const [animate, setAnimate] = useState(false);
   const [animate2, setAnimate2] = useState(false);
+  const [animate3, setAnimate3] = useState(false);
   return (
-    <div className="bg-myBlue-bgLight italic py-20" id="main">
-      <p className="text-center alex text-6xl" id="newlyweds">
+    <div className="bg-myBlue-bgLight italic py-20" id="newlyweds">
+      <Waypoint onEnter={() => setAnimate3(true)} />
+      <p
+        className={
+          animate3
+            ? `${css(styles.fadeIn)} text-center alex text-6xl`
+            : "hidden"
+        }
+      >
         Gli Sposi
       </p>
       <Waypoint onEnter={() => setAnimate(true)} />

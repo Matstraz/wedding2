@@ -11,10 +11,21 @@ import { Waypoint } from "react-waypoint";
 
 export default function WhenWhere() {
   const [animate, setAnimate] = useState(false);
+  const [animate2, setAnimate2] = useState(false);
 
   return (
     <div className="bg-myBlue-bgLight py-20" id="where/when">
-      <div className="text-center alex text-6xl italic">Dove & Quando</div>
+      <Waypoint onEnter={() => setAnimate2(true)} />
+
+      <div
+        className={
+          animate2
+            ? `${css(styles.fadeIn)} text-center alex text-6xl italic`
+            : "hidden"
+        }
+      >
+        Dove & Quando
+      </div>
       <Waypoint onEnter={() => setAnimate(true)} />
       <div
         className={
