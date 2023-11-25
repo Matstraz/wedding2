@@ -1,5 +1,4 @@
 import { useState } from "react";
-import waLogo from "../../../assets/pics/waLogo.svg";
 import { css } from "aphrodite";
 import styles from "../../utils/Animations";
 import icons from "../../utils/Icons";
@@ -56,12 +55,7 @@ export default function RsvpModal() {
                       className="flex flex-row justify-center items-center gap-1"
                     >
                       <p className="underline">3476076565</p>
-                      <img
-                        src={waLogo}
-                        width={20}
-                        className={css(styles.tada)}
-                        alt="Whatsapp logo"
-                      />
+                      {icons.waIcon}
                     </a>
                   </div>
                   <div>
@@ -71,12 +65,7 @@ export default function RsvpModal() {
                       className="flex flex-row justify-center items-center gap-1"
                     >
                       <p className="underline">3423878435</p>
-                      <img
-                        src={waLogo}
-                        width={20}
-                        className={css(styles.tada)}
-                        alt="Whatsapp logo"
-                      />
+                      {icons.waIcon}
                     </a>
                   </div>
                 </div>

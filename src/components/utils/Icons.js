@@ -1,7 +1,8 @@
 import { faChevronDown, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-/* import { css } from "aphrodite";
-import styles from "./Animations"; */
+import waIcon from "../../assets/pics/wedding icons/waIcon.svg";
+import { css } from "aphrodite";
+import styles from "./Animations";
 
 const icons = {
   /*   projects: <FontAwesomeIcon icon={faDiagramProject} className="h-4" />,
@@ -10,6 +11,14 @@ const icons = {
   ), */
   scroll: <FontAwesomeIcon icon={faChevronDown} className="h-4 text-black" />,
   heart: <FontAwesomeIcon icon={faHeart} className="h-3 text-slate-700" />,
+  waIcon: (
+    <img
+      src={waIcon}
+      width={20}
+      className={css(styles.tada)}
+      alt="Whatsapp icon"
+    />
+  ),
 };
 
 export default icons;

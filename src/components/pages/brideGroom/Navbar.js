@@ -87,10 +87,6 @@ export default function Navbar() {
                         Programma
                       </a>
                     </li>
-                    {/* DA RIAGGIUNGERE NEL BURGER IN CASO NON PIACESSE LA SCRITTA RSVP */}
-                    {/* <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
-                      <RsvpModalSmall closeBurger={setIsMenuOpen} />
-                    </li> */}
                   </ul>
                 </nav>
               </div>

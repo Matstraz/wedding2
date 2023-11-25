@@ -16,7 +16,6 @@ export default function WhenWhere() {
   return (
     <div className="bg-myBlue-bgLight py-20" id="where/when">
       <Waypoint onEnter={() => setAnimate2(true)} />
-
       <div
         className={
           animate2

@@ -1,0 +1,106 @@
+/* Scss used to create a circle element for timeline*/
+
+@import "~compass-mixins/lib/compass/css3";
+
+/// Mixin to place items on a circle
+/// @author Hugo Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  padding: 0;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -($item-size / 2);
+    width: $item-size;
+    height: $item-size;
+
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2)
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.circle-container {
+  @include on-circle($item-count: 10, $circle-size: 30em, $item-size: 7.5em);
+  .arrow1 {
+    width: 90px;
+    height: 80px;
+  }
+  .arrow2 {
+    width: 60px;
+    height: 80px;
+  }
+  .arrow3 {
+    width: 120px;
+    height: 52px;
+  }
+  .arrow4 {
+    width: 40px;
+    height: 90px;
+  }
+  .arrow5 {
+    width: 110px;
+    height: 50px;
+  }
+  .centeredArrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centeredDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* mobile responsivity */
+@media screen and (max-width: 600px) {
+  .circle-container {
+    @include on-circle($item-count: 10, $circle-size: 18em, $item-size: 4.5em);
+
+    .arrow1 {
+      width: 55px;
+      height: 45px;
+    }
+    .arrow2 {
+      width: 30px;
+      height: 50px;
+    }
+    .arrow3 {
+      width: 90px;
+      height: 30px;
+    }
+    .arrow4 {
+      width: 20px;
+      height: 50px;
+    }
+    .arrow5 {
+      width: 80px;
+      height: 30px;
+    }
+  }
+}

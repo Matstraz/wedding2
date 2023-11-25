@@ -1,53 +1,75 @@
+import drink from "../../assets/pics/timeline/drink.png";
 import cake from "../../assets/pics/timeline/cake.png";
-import camera from "../../assets/pics/timeline/camera.png";
-import car from "../../assets/pics/timeline/car.png";
-import cheers from "../../assets/pics/timeline/cheers.png";
-import church from "../../assets/pics/timeline/church.png";
-import dish from "../../assets/pics/timeline/dish.png";
-import flowers from "../../assets/pics/timeline/flowers.png";
+import music from "../../assets/pics/timeline/music.png";
+import rings from "../../assets/pics/timeline/rings.png";
+import dinner from "../../assets/pics/timeline/dinner.png";
+import arrow1 from "../../assets/pics/timeline/arrows/arrow1.png";
+import arrow2 from "../../assets/pics/timeline/arrows/arrow2.png";
+import arrow3 from "../../assets/pics/timeline/arrows/arrow3.png";
+import arrow4 from "../../assets/pics/timeline/arrows/arrow4.png";
+import arrow5 from "../../assets/pics/timeline/arrows/arrow5.png";
+import { useState } from "react";
+import { Waypoint } from "react-waypoint";
+import styles from "../utils/Animations";
+import { css } from "aphrodite";
 
 export default function Timeline() {
+  const [animate, setAnimate] = useState(false);
+
   return (
-    <div className="min-h-screen bg-myBlue-bgLight italic pt-20" id="timeline">
-      <div className="text-center alex text-6xl italic">Programma</div>
-      <div className="flex flex-col items-center pt-12 gap-12 text-center">
-        <div div className="grid grid-cols-1 md:grid-cols-4 gap-12 ">
-          <div className="justify-self-center flex flex-col gap-3">
-            <img src={church} alt="church " className="h-40" />
-            <p>12:00</p>
-            <p className="text-2xl">Cerimonia</p>
+    <div className="bg-myBlue-bgLight italic pt-20 pb-10" id="timeline">
+      <Waypoint onEnter={() => setAnimate(true)} />
+      <div
+        className={
+          animate
+            ? `${css(styles.fadeIn)} text-center alex text-6xl italic`
+            : "hidden"
+        }
+      >
+        Programma
+      </div>
+      <div
+        className={
+          animate
+            ? `${css(styles.fadeIn)} py-24 flex justify-center items-center`
+            : "hidden"
+        }
+      >
+        <div className="circle-container">
+          <div className="centeredArrows">
+            <img className="arrow4" src={arrow4} alt="arrow4"></img>
           </div>
-          <div className="justify-self-center flex flex-col gap-3">
-            <img src={camera} alt="camera" className="h-40" />
-            <p>12:00</p>
-            <p className="text-2xl">Servizio</p>
+          <div className="centeredDiv">
+            <img src={dinner} alt="dinner"></img>
+            <p className="text-center">12:00</p>
           </div>
-          <div className="justify-self-center flex flex-col gap-3">
-            <img src={dish} alt="dish" className="h-40" />
-            <p>12:00</p>
-            <p className="text-2xl">Cena</p>
+          <div className="centeredArrows">
+            <img className="arrow5" src={arrow5} alt="arrow5"></img>
           </div>
-          <div className="justify-self-center flex flex-col gap-3">
-            <img src={flowers} alt="flowers" className="h-40" />
-            <p>12:00</p>
-            <p className="text-2xl">Lancio</p>
+          <div className="centeredDiv">
+            <img src={music} alt="music"></img>
+            <p className="text-center">12:00</p>
           </div>
-        </div>
-        <div div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
-          <div className="justify-self-center flex flex-col gap-3">
-            <img src={cake} alt="cake" className="h-40" />
-            <p>12:00</p>
-            <p className="text-2xl">Taglio</p>
+          <div className="centeredArrows">
+            <img className="arrow1" src={arrow1} alt="arrow1"></img>
           </div>
-          <div className="justify-self-center flex flex-col gap-3">
-            <img src={cheers} alt="cheers" className="h-40" />
-            <p>12:00</p>
-            <p className="text-2xl">Brindisi</p>
+          <div className="centeredDiv">
+            <img src={cake} alt="cake"></img>
+            <p className="text-center">12:00</p>
           </div>
-          <div className="justify-self-center flex flex-col gap-3">
-            <img src={car} alt="car" className="h-40" />
-            <p>12:00</p>
-            <p className="text-2xl">Viaggio</p>
+          <div className="centeredArrows">
+            <img className="arrow2" src={arrow2} alt="arrow2"></img>
+          </div>
+          <div className="centeredDiv">
+            <img src={rings} alt="rings"></img>
+            <p className="text-center">12:00</p>
+          </div>
+          <div className="centeredArrows">
+            <img className="arrow3" src={arrow3} alt="arrow3"></img>
+          </div>
+          <div className="centeredDiv">
+            <img src={drink} alt="drink"></img>
+            <p className="text-center">12:00</p>
           </div>
         </div>
       </div>

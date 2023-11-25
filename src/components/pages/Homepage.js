@@ -30,6 +30,7 @@ export default function Homepage() {
           speed={[1.0, 2.0]}
           wind={[-0.5, 2.0]}
         />
+        {/* Add next rows to switch to a backgroundless landing page */}
         {/*    <p className="alex borded text-6xl p-5 md:p-0">Alessandra & Matteo</p>
         <p className="borded text-3xl italic">15.06.2024</p> */}
       </div>
