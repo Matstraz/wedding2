@@ -29,6 +29,10 @@ export default function Witnesses() {
       "Luigi",
       "As a developer lorem ipsum is a dummy text to write a long textthat you don't want to write",
     ],
+    [
+      "Paolo",
+      "As a developer lorem ipsum is a dummy text to write a long textthat you don't want to write",
+    ],
   ];
   const responsive = {
     LargeDesktop: {
