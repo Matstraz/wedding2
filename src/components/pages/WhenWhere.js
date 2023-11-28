@@ -9,12 +9,12 @@ import { css } from "aphrodite";
 import styles from "../utils/Animations";
 import { Waypoint } from "react-waypoint";
 
-export default function WhenWhere() {
+export default function WhenWhere({ refWhenWhere }) {
   const [animate, setAnimate] = useState(false);
   const [animate2, setAnimate2] = useState(false);
 
   return (
-    <div className="bg-myBlue-bgLight py-20" id="where/when">
+    <div className="bg-myBlue-bgLight py-20" id="where/when" ref={refWhenWhere}>
       <Waypoint onEnter={() => setAnimate2(true)} />
       <div
         className={

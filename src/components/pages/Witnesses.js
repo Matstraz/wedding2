@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import { Waypoint } from "react-waypoint";
 import styles from "../utils/Animations";
 
-export default function Witnesses() {
+export default function Witnesses({ refWitnesses }) {
   const [animate, setAnimate] = useState(false);
 
   const witnesses = [
@@ -53,9 +53,13 @@ export default function Witnesses() {
     },
   };
   return (
-    <div className="bg-myBlue-bgDark py-14 bg-witnesses" id="witnesses">
+    <div
+      className="bg-myBlue-bgDark py-20 bg-witnesses"
+      id="witnesses"
+      ref={refWitnesses}
+    >
       <Waypoint onEnter={() => setAnimate(true)} />
-      <div
+      <p
         className={
           animate
             ? `${css(styles.fadeIn)} text-center alex text-6xl italic `
@@ -63,7 +67,7 @@ export default function Witnesses() {
         }
       >
         I Testimoni
-      </div>
+      </p>
       <div>
         <Carousel
           swipeable={true}

@@ -5,17 +5,17 @@ import { css } from "aphrodite";
 import styles from "../../utils/Animations";
 import { Waypoint } from "react-waypoint";
 
-export default function BrideGroom() {
+export default function BrideGroom({ refBrideGroom }) {
   const [animate, setAnimate] = useState(false);
   const [animate2, setAnimate2] = useState(false);
   const [animate3, setAnimate3] = useState(false);
   return (
-    <div className="bg-myBlue-bgLight italic py-20" id="newlyweds">
+    <div className="bg-myBlue-bgLight py-20" id="newlyweds" ref={refBrideGroom}>
       <Waypoint onEnter={() => setAnimate3(true)} />
       <p
         className={
           animate3
-            ? `${css(styles.fadeIn)} text-center alex text-6xl`
+            ? `${css(styles.fadeIn)} text-center alex text-6xl italic`
             : "hidden"
         }
       >

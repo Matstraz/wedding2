@@ -3,19 +3,44 @@ import logo from "../../../assets/pics/logos/Logo definitivo.png";
 import RsvpModal from "./RsvpModal";
 import icons from "../../utils/Icons";
 
-export default function Navbar() {
+export default function Navbar({
+  refBrideGroom,
+  refWhenWhere,
+  refWitnesses,
+  refTimeline,
+  refHome,
+}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  /* scroll to pages */
+
+  function navToHome() {
+    refHome.current?.scrollIntoView({ behavior: "smooth" });
+  }
+  function navToBrideGroom() {
+    refBrideGroom.current?.scrollIntoView({ behavior: "smooth" });
+  }
+  function navToWhenWhere() {
+    refWhenWhere.current?.scrollIntoView({ behavior: "smooth" });
+  }
+  function navToWitnesses() {
+    refWitnesses.current?.scrollIntoView({ behavior: "smooth" });
+  }
+  function navToTimeline() {
+    refTimeline.current?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <nav className="bg-white flex px-5 justify-between lg:justify-center items-center xl:gap-40 gap-28 border-b-2 stickyBar z-20 p-1 text-base">
       <a href="#home">
         <img src={logo} alt="logo" width={50} />
       </a>
-      <ul className="hidden lg:flex justify-center text-center items-center gap-12 overflow-clip italic">
-        <a href="#home">HOME</a>
-        <a href="#newlyweds">GLI SPOSI</a>
-        <a href="#where/when">DOVE/QUANDO</a>
-        <a href="#witnesses">I TESTIMONI</a>
-        <a href="#timeline">PROGRAMMA</a>
+      <ul className="hidden lg:flex justify-center text-center items-center gap-12 overflow-clip italic hover:cursor-pointer">
+        <p onClick={navToHome}>HOME</p>
+        <p onClick={navToBrideGroom}>GLI SPOSI</p>
+        <p onClick={navToWhenWhere}>DOVE/QUANDO</p>
+        <p onClick={navToWitnesses}>I TESTIMONI</p>
+        <p onClick={navToTimeline}>PROGRAMMA</p>
       </ul>
       <div className="flex justify-center items-center gap-4">
         <RsvpModal />

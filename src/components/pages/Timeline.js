@@ -13,11 +13,15 @@ import { Waypoint } from "react-waypoint";
 import styles from "../utils/Animations";
 import { css } from "aphrodite";
 
-export default function Timeline() {
+export default function Timeline({ refTimeline }) {
   const [animate, setAnimate] = useState(false);
 
   return (
-    <div className="bg-myBlue-bgLight italic pt-20 pb-10" id="timeline">
+    <div
+      className="bg-myBlue-bgLight italic pt-20 pb-10"
+      id="timeline"
+      ref={refTimeline}
+    >
       <Waypoint onEnter={() => setAnimate(true)} />
       <div
         className={
