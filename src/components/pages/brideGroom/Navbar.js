@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../../../assets/pics/logos/Logo definitivo.png";
 import RsvpModal from "./RsvpModal";
+import icons from "../../utils/Icons";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +22,17 @@ export default function Navbar() {
         {/* BURGER MENU */}
         <div className="lg:hidden z-10">
           <button
+            aria-label="Close Menu"
+            title="Close Menu"
+            className={isMenuOpen ? "px-2 pl-3" : "hidden"}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {icons.xmark}
+          </button>
+          <button
             aria-label="Open Menu"
             title="Open Menu"
-            className="p-2"
+            className={!isMenuOpen ? "p-2" : "hidden"}
             onClick={() => setIsMenuOpen(true)}
           >
             <svg className="w-6 text-black" viewBox="0 0 24 24">
@@ -42,9 +51,9 @@ export default function Navbar() {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-3 right-3 w-max border border-black">
-              <div className="p-5 pt-0 bg-myBlue-300 w-full">
-                <div className="flex items-center justify-between border-b-2 border-slate-100">
+            <div className="absolute top-14 right-0 w-full border border-slate-200 text-center">
+              <div className="p-5 bg-myBlue-300 w-full">
+                {/* <div className="flex items-center justify-between border-b-2 border-slate-100">
                   <div className="flex justify-end w-full p-2">
                     <button
                       aria-label="Close Menu"
@@ -55,20 +64,20 @@ export default function Navbar() {
                       X
                     </button>
                   </div>
-                </div>
+                </div> */}
                 <nav>
-                  <ul className="font-bold p-2 italic ">
-                    <li className="border-b-2 border-slate-200 hover:text-slate-600">
+                  <ul className="font-bold italic">
+                    <li className="border-b-2 border-t-2 border-slate-200 py-3">
                       <a href="#home" onClick={() => setIsMenuOpen(false)}>
                         Home
                       </a>
                     </li>
-                    <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
+                    <li className="border-b-2 border-slate-200 py-3">
                       <a href="#newlyweds" onClick={() => setIsMenuOpen(false)}>
                         Gli sposi
                       </a>
                     </li>
-                    <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
+                    <li className="border-b-2 border-slate-200 py-3">
                       <a
                         href="#where/when"
                         onClick={() => setIsMenuOpen(false)}
@@ -76,13 +85,13 @@ export default function Navbar() {
                         Dove/Quando
                       </a>
                     </li>
-                    <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
+                    <li className="border-b-2 border-slate-200 py-3">
                       <a href="#witnesses" onClick={() => setIsMenuOpen(false)}>
                         I testimoni
                       </a>
                     </li>
 
-                    <li className="border-b-2 border-slate-200 mt-2 hover:text-slate-600">
+                    <li className="border-b-2 border-slate-200 py-3">
                       <a href="#timeline" onClick={() => setIsMenuOpen(false)}>
                         Programma
                       </a>

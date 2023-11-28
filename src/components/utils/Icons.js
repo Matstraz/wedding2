@@ -1,4 +1,8 @@
-import { faChevronDown, faHeart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faHeart,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import waIcon from "../../assets/pics/wedding icons/waIcon.svg";
 import { css } from "aphrodite";
@@ -11,6 +15,7 @@ const icons = {
   ), */
   scroll: <FontAwesomeIcon icon={faChevronDown} className="h-4 text-black" />,
   heart: <FontAwesomeIcon icon={faHeart} className="h-3 text-slate-700" />,
+  xmark: <FontAwesomeIcon icon={faXmark} className="h-8 text-black" />,
   waIcon: (
     <img
       src={waIcon}
