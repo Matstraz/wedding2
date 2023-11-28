@@ -66,7 +66,7 @@ export default function Witnesses({ refWitnesses }) {
             : "hidden"
         }
       >
-        I Testimoni
+        I&nbsp; Testimoni
       </p>
       <div>
         <Carousel

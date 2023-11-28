@@ -78,48 +78,58 @@ export default function Navbar({
           {isMenuOpen && (
             <div className="absolute top-14 right-0 w-full border border-slate-200 text-center">
               <div className="p-5 bg-myBlue-300 w-full">
-                {/* <div className="flex items-center justify-between border-b-2 border-slate-100">
-                  <div className="flex justify-end w-full p-2">
-                    <button
-                      aria-label="Close Menu"
-                      title="Close Menu"
-                      className="rounded hover:bg-slate-200 font-bold px-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      X
-                    </button>
-                  </div>
-                </div> */}
                 <nav>
                   <ul className="font-bold italic">
-                    <li className="border-b-2 border-t-2 border-slate-200 py-3">
-                      <a href="#home" onClick={() => setIsMenuOpen(false)}>
+                    <li className="border-b-2 border-t-2 border-slate-200 py-3 hover:cursor-pointer">
+                      <p
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          navToHome();
+                        }}
+                      >
                         Home
-                      </a>
+                      </p>
                     </li>
-                    <li className="border-b-2 border-slate-200 py-3">
-                      <a href="#newlyweds" onClick={() => setIsMenuOpen(false)}>
+                    <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
+                      <p
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          navToBrideGroom();
+                        }}
+                      >
                         Gli sposi
-                      </a>
+                      </p>
                     </li>
-                    <li className="border-b-2 border-slate-200 py-3">
-                      <a
-                        href="#where/when"
-                        onClick={() => setIsMenuOpen(false)}
+                    <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
+                      <p
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          navToWhenWhere();
+                        }}
                       >
                         Dove/Quando
-                      </a>
+                      </p>
                     </li>
-                    <li className="border-b-2 border-slate-200 py-3">
-                      <a href="#witnesses" onClick={() => setIsMenuOpen(false)}>
+                    <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
+                      <p
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          navToWitnesses();
+                        }}
+                      >
                         I testimoni
-                      </a>
+                      </p>
                     </li>
 
-                    <li className="border-b-2 border-slate-200 py-3">
-                      <a href="#timeline" onClick={() => setIsMenuOpen(false)}>
+                    <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
+                      <p
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          navToTimeline();
+                        }}
+                      >
                         Programma
-                      </a>
+                      </p>
                     </li>
                   </ul>
                 </nav>
