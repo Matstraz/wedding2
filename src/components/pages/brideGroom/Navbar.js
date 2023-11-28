@@ -12,7 +12,7 @@ export default function Navbar({
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  /* scroll to pages */
+  /*smooth scroll to pages */
 
   function navToHome() {
     refHome.current?.scrollIntoView({ behavior: "smooth" });
