@@ -8,6 +8,7 @@ import Timeline from "./components/pages/Timeline";
 import WhenWhere from "./components/pages/WhenWhere";
 
 import Witnesses from "./components/pages/Witnesses";
+import Iban from "./components/pages/Iban";
 
 function App() {
   /* scroll to pages */
@@ -16,6 +17,7 @@ function App() {
   const refWitnesses = useRef(null);
   const refTimeline = useRef(null);
   const refHome = useRef(null);
+
   return (
     <div className="relative text-slate-500">
       <Homepage refHome={refHome} refBrideGroom={refBrideGroom} />
@@ -31,6 +33,7 @@ function App() {
       <WhenWhere refWhenWhere={refWhenWhere} />
       <Witnesses refWitnesses={refWitnesses} />
       <Timeline refTimeline={refTimeline} />
+      <Iban refHome={refHome} />
       <Footer />
     </div>
   );

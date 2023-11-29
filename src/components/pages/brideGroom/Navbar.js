@@ -40,7 +40,7 @@ export default function Navbar({
         <p onClick={navToBrideGroom}>GLI SPOSI</p>
         <p onClick={navToWhenWhere}>DOVE/QUANDO</p>
         <p onClick={navToWitnesses}>I TESTIMONI</p>
-        <p onClick={navToTimeline}>PROGRAMMA</p>
+        <p onClick={navToTimeline}>IL PROGRAMMA</p>
       </ul>
       <div className="flex justify-center items-center gap-4">
         <RsvpModal />
@@ -128,7 +128,7 @@ export default function Navbar({
                           navToTimeline();
                         }}
                       >
-                        Programma
+                        Il Programma
                       </p>
                     </li>
                   </ul>

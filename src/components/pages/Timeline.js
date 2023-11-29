@@ -18,7 +18,7 @@ export default function Timeline({ refTimeline }) {
 
   return (
     <div
-      className="bg-myBlue-bgLight italic pt-20 pb-10"
+      className="bg-myBlue-bgLight pt-20 pb-10"
       id="timeline"
       ref={refTimeline}
     >
@@ -30,7 +30,7 @@ export default function Timeline({ refTimeline }) {
             : "invisible"
         }
       >
-        Programma
+        Il Programma
       </div>
       <div
         className={
