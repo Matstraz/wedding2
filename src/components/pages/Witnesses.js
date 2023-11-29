@@ -63,7 +63,7 @@ export default function Witnesses({ refWitnesses }) {
         className={
           animate
             ? `${css(styles.fadeIn)} text-center alex text-6xl italic `
-            : "hidden"
+            : "invisible"
         }
       >
         I&nbsp; Testimoni

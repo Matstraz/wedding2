@@ -16,7 +16,7 @@ export default function BrideGroom({ refBrideGroom }) {
         className={
           animate3
             ? `${css(styles.fadeIn)} text-center alex text-6xl italic`
-            : "hidden"
+            : "invisible"
         }
       >
         Gli Sposi
@@ -29,7 +29,7 @@ export default function BrideGroom({ refBrideGroom }) {
             ? `${css(
                 styles.fadeIn
               )} flex flex-col md:flex-row justify-center items-center py-16 md:gap-16 gap-8 px-2`
-            : "hidden"
+            : "invisible"
         }
       >
         <div className="flex flex-col justify-center items-center gap-5">
@@ -47,7 +47,7 @@ export default function BrideGroom({ refBrideGroom }) {
         className={
           animate2
             ? `${css(styles.fadeIn)} text-center alex text-5xl`
-            : "hidden"
+            : "invisible"
         }
       >
         Lorem, ipsum dolor.
@@ -56,7 +56,7 @@ export default function BrideGroom({ refBrideGroom }) {
         className={
           animate2
             ? `${css(styles.fadeIn)} text-center text-base py-5`
-            : "hidden"
+            : "invisible"
         }
       >
         5 Luglio, 2024 - Palermo

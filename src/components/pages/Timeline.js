@@ -27,7 +27,7 @@ export default function Timeline({ refTimeline }) {
         className={
           animate
             ? `${css(styles.fadeIn)} text-center alex text-6xl italic`
-            : "hidden"
+            : "invisible"
         }
       >
         Programma
@@ -36,7 +36,7 @@ export default function Timeline({ refTimeline }) {
         className={
           animate
             ? `${css(styles.fadeIn)} py-24 flex justify-center items-center`
-            : "hidden"
+            : "invisible"
         }
       >
         <div className="circle-container">

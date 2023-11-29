@@ -20,7 +20,7 @@ export default function WhenWhere({ refWhenWhere }) {
         className={
           animate2
             ? `${css(styles.fadeIn)} text-center alex text-6xl italic`
-            : "hidden"
+            : "invisible"
         }
       >
         Dove & Quando
@@ -30,7 +30,7 @@ export default function WhenWhere({ refWhenWhere }) {
         className={
           animate
             ? `${css(styles.fadeInUp)} flex justify-center pt-12`
-            : "hidden"
+            : "invisible"
         }
       >
         <div className="flex gap-7 w-full justify-center flex-col lg:flex-row items-center">
