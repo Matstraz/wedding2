@@ -64,3 +64,7 @@
   position: sticky;
   top: 0;
 }
+
+.my7Rows {
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+}

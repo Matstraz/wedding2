@@ -4,7 +4,7 @@ import Navbar from "./components/pages/brideGroom/Navbar";
 import Footer from "./components/pages/Footer";
 import Homepage from "./components/pages/Homepage";
 import MyTimer from "./components/pages/MyTimer";
-import Timeline from "./components/pages/Timeline";
+import Timeline from "./components/pages/timeline/Timeline";
 import WhenWhere from "./components/pages/WhenWhere";
 
 import Witnesses from "./components/pages/Witnesses";
