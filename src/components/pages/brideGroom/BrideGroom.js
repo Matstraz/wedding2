@@ -23,7 +23,7 @@ export default function BrideGroom({ refBrideGroom }) {
       </p>
       <Waypoint onEnter={() => setAnimate(true)} />
 
-      <div
+      {/*       <div
         className={
           animate
             ? `${css(
@@ -41,7 +41,63 @@ export default function BrideGroom({ refBrideGroom }) {
           <img src={foto2} className="w-56 md:w-72" alt="foto sposa" />
           <p>Alessandra</p>
         </div>
+      </div> */}
+      {/* desktop version */}
+      <div className="md:flex justify-center items-center hidden w-full">
+        <div
+          className={
+            animate
+              ? `${css(
+                  styles.fadeIn
+                )} grid gridSystemBrideGroom grid-rows-3 py-16 w-3/4`
+              : "invisible"
+          }
+        >
+          {/* row 1 */}
+          <div></div>
+          <div></div>
+          <div className="row-span-2 flex justify-start">
+            <div className="flex flex-col justify-center items-center gap-5 ">
+              <img src={foto1} className="w-56 md:w-72" alt="foto sposo" />
+              <p>Matteo</p>
+            </div>
+          </div>
+
+          {/* row 2 */}
+          <div className="row-span-2 flex justify-end">
+            <div className="flex flex-col justify-center items-center gap-5">
+              <img src={foto2} className="w-56 md:w-72" alt="foto sposa" />
+              <p>Alessandra</p>
+            </div>
+          </div>
+
+          <p className="text-4xl sm:text-6xl lg:text-6xl alex text-center">&</p>
+          {/* row 3 */}
+          <div></div>
+          <div></div>
+        </div>
       </div>
+      {/* mobile version */}
+      <div
+        className={
+          animate
+            ? `${css(
+                styles.fadeIn
+              )} flex flex-col justify-center items-center py-16 gap-8 px-2 md:hidden`
+            : "invisible"
+        }
+      >
+        <div className="flex flex-col justify-center items-center gap-5">
+          <img src={foto1} className="w-56 md:w-72" alt="foto sposo" />
+          <p>Matteo</p>
+        </div>
+        <p className="text-4xl sm:text-6xl lg:text-6xl alex">&</p>
+        <div className="flex flex-col justify-center items-center gap-5">
+          <img src={foto2} className="w-56 md:w-72" alt="foto sposa" />
+          <p>Alessandra</p>
+        </div>
+      </div>
+
       <Waypoint onEnter={() => setAnimate2(true)} />
       <div
         className={
