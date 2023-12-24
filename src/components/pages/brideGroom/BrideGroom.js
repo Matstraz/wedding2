@@ -22,26 +22,6 @@ export default function BrideGroom({ refBrideGroom }) {
         Gli Sposi
       </p>
       <Waypoint onEnter={() => setAnimate(true)} />
-
-      {/*       <div
-        className={
-          animate
-            ? `${css(
-                styles.fadeIn
-              )} flex flex-col md:flex-row justify-center items-center py-16 md:gap-16 gap-8 px-2`
-            : "invisible"
-        }
-      >
-        <div className="flex flex-col justify-center items-center gap-5">
-          <img src={foto1} className="w-56 md:w-72" alt="foto sposo" />
-          <p>Matteo</p>
-        </div>
-        <p className="text-4xl sm:text-6xl lg:text-6xl alex">&</p>
-        <div className="flex flex-col justify-center items-center gap-5">
-          <img src={foto2} className="w-56 md:w-72" alt="foto sposa" />
-          <p>Alessandra</p>
-        </div>
-      </div> */}
       {/* desktop version */}
       <div className="md:flex justify-center items-center hidden w-full">
         <div
@@ -71,7 +51,7 @@ export default function BrideGroom({ refBrideGroom }) {
             </div>
           </div>
 
-          <p className="text-4xl sm:text-6xl lg:text-6xl alex text-center">&</p>
+          <p className="text-4xl sm:text-5xl alex text-center">&</p>
           {/* row 3 */}
           <div></div>
           <div></div>
