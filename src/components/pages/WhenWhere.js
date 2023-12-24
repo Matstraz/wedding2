@@ -1,5 +1,5 @@
 import church from "../../assets/pics/backgrounds/bg-church.jpg";
-import castle from "../../assets/pics/backgrounds/bg-castle.jpg";
+import castle from "../../assets/pics/backgrounds/bg-castle.png";
 import info from "../../assets/pics/wedding icons/info.png";
 import map from "../../assets/pics/wedding icons/map.png";
 import churchIcon from "../../assets/pics/wedding icons/church.png";
@@ -35,7 +35,10 @@ export default function WhenWhere({ refWhenWhere }) {
       >
         <div className="flex gap-7 w-full justify-center flex-col lg:flex-row items-center">
           <div className="2xl:w-4/12 lg:w-5/12 md:w-10/12 w-11/12">
-            <img src={church} alt="church" className="w-full" />
+            <div className="w-full relative">
+              <img src={church} alt="church" className="w-full" />
+              <div className="absolute top-0 left-0 w-full h-full bg-myBlue-bgDark bg-opacity-30"></div>
+            </div>
             <div className="flex flex-col justify-center text-center items-center gap-6 bg-white p-9 relative">
               <img
                 src={churchIcon}
@@ -66,10 +69,12 @@ export default function WhenWhere({ refWhenWhere }) {
             </div>
           </div>
           <div className="2xl:w-4/12 lg:w-5/12 md:w-10/12 w-11/12">
-            <img src={castle} alt="castle" className="w-full" />
+            <div className="w-full relative">
+              <img src={castle} alt="castle" className="w-full" />
+              <div className="absolute top-0 left-0 w-full h-full bg-myBlue-bgDark bg-opacity-30"></div>
+            </div>
             <div className="flex flex-col justify-center items-center text-center gap-6 bg-white p-9 relative">
               <img src={party} alt="party" className="absolute -top-7 w-24" />
-
               <p className="italic text-slate-700">IL RICEVIMENTO</p>
               <p>
                 Il Castello di San Nicola L’Arena fu edificato nel XIV secolo,
