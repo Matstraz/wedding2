@@ -25,7 +25,7 @@ export default function DesktopVersion({ animate, setAnimate }) {
       }
     >
       <Waypoint onEnter={() => setAnimate(true)} />
-      <div className="grid grid-cols-8 my7Rows gap-3 w-2/3">
+      <div className="grid grid-cols-8 my7Rows gap-3 w-8/12 3xl:w-7/12 4xl:w-6/12 5xl:w-5/12 6xl:w-4/12">
         {/* row 1 L'IMPOSTAZIONE DELL'ALTEZZA DI UN DIV INFLUENZA TUTTI GLI ALTRI, MTTRE PICS & ARROWS */}
         <div className="col-span-2 row-span-2 flex justify-end items-center">
           <div className="flex flex-col justify-center items-center gap-1">
