@@ -51,7 +51,7 @@ export default function RsvpModal() {
                   <div>
                     <p className="font-bold">Alessandra</p>
                     <a
-                      href="https://wa.me/3476076565"
+                      href="https://wa.me/+393476076565"
                       className="flex flex-row justify-center items-center gap-1"
                     >
                       <p className="underline">3476076565</p>
@@ -61,7 +61,7 @@ export default function RsvpModal() {
                   <div>
                     <p className="font-bold">Matteo</p>
                     <a
-                      href="https://wa.me/3423878435"
+                      href="https://wa.me/+393423878435"
                       className="flex flex-row justify-center items-center gap-1"
                     >
                       <p className="underline">3423878435</p>
