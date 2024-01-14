@@ -23,9 +23,8 @@
 }
 
 /* bg landing page */
-
 .backHome {
-  background-image: url(./assets/pics/backgrounds/homepage/bg_scritte_piccole.png);
+  background-image: url(./assets/pics/homepage/bg_scritte_piccole.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,30 +32,32 @@
 
 @media all and (max-width: 767px) {
   .backHome {
-    background-image: url(./assets/pics/backgrounds/homepage/bg_mobile.jpg);
+    background-image: url(./assets/pics/homepage/bg_mobile.jpg);
   }
 }
 
-.bg-church {
-  background-image: url(./assets/pics/backgrounds/bg-church.jpg);
+/* bg witnesses */
+.bg-witnesses {
+  background-image: url(./assets/pics/witnesses/hydrangeas_opacity+.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* when where pics as background */
+/* .bg-church {
+  background-image: url(./assets/pics/when where/bg-church.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-castle {
-  background-image: url(./assets/pics/backgrounds/bg-castle.png);
+  background-image: url(./assets/pics/when where/bg-castle.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.bg-witnesses {
-  background-image: url(./assets/pics/backgrounds/hydrangeas_opacity+.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+} */
 
 /* navbar properties */
 .stickyBar {
@@ -65,10 +66,12 @@
   top: 0;
 }
 
+/* grid system timeline */
 .my7Rows {
   grid-template-rows: repeat(7, minmax(0, 1fr));
 }
 
+/* grid system bride groom */
 .gridSystemBrideGroom {
   grid-template-columns: auto min-content auto;
 }

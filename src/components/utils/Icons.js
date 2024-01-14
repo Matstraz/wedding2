@@ -5,7 +5,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import waIcon from "../../assets/pics/wedding icons/waIcon.svg";
+import waIcon from "../../assets/pics/navbar/waIcon.svg";
 import { css } from "aphrodite";
 import styles from "./Animations";
 

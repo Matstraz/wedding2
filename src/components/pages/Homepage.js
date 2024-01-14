@@ -2,8 +2,8 @@ import { css } from "aphrodite";
 import Snowfall from "react-snowfall";
 import styles from "../utils/Animations";
 import icons from "../utils/Icons";
-import leaf3 from "../../assets/pics/backgrounds/homepage/foglia1.png";
-import leaf4 from "../../assets/pics/backgrounds/homepage/foglia2.png";
+import leaf3 from "../../assets/pics/homepage/foglia1.png";
+import leaf4 from "../../assets/pics/homepage/foglia2.png";
 /* import oleanders from "../../assets/pics/backgrounds/flower.png"; */
 
 export default function Homepage({ refHome, refBrideGroom }) {

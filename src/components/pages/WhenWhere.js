@@ -1,9 +1,8 @@
-import church from "../../assets/pics/backgrounds/bg-church.jpg";
-import castle from "../../assets/pics/backgrounds/bg-castle.png";
-import info from "../../assets/pics/wedding icons/info.png";
-import map from "../../assets/pics/wedding icons/map.png";
-import churchIcon from "../../assets/pics/wedding icons/church.png";
-import party from "../../assets/pics/wedding icons/party.png";
+import church from "../../assets/pics/when where/bg-church.jpg";
+import castle from "../../assets/pics/when where/bg-castle.png";
+import map from "../../assets/pics/when where/map.png";
+import churchIcon from "../../assets/pics/when where/church.png";
+import party from "../../assets/pics/when where/party.png";
 import { useState } from "react";
 import { css } from "aphrodite";
 import styles from "../utils/Animations";
@@ -58,14 +57,13 @@ export default function WhenWhere({ refWhenWhere }) {
                 Venerdì 5/07/2024 - 15:30 - Chiesa di Santa Maria della Pietà,
                 Piazzetta della Pietà SNC, 90133 Palermo
               </p>
-              <div className="flex gap-20 md:gap-28">
-                <a href="https://it.wikipedia.org/wiki/Chiesa_di_Santa_Maria_della_Piet%C3%A0_(Palermo)">
-                  <img src={info} alt="info" className="w-14" />
-                </a>
-                <a href="https://www.google.it/maps/dir//Chiesa+Santa+Maria+Della+Piet%C3%A0,+Piazzetta+della+Piet%C3%A0,+Palermo,+PA/@38.1174972,13.3716383,202m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x1319e52ede184e8b:0x58413da94c6faeb6!2m2!1d13.3721157!2d38.1169877!3e0">
-                  <img src={map} alt="map" className="w-7" />
-                </a>
-              </div>
+              <a
+                href="https://www.google.it/maps/dir//Chiesa+Santa+Maria+Della+Piet%C3%A0,+Piazzetta+della+Piet%C3%A0,+Palermo,+PA/@38.1174972,13.3716383,202m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x1319e52ede184e8b:0x58413da94c6faeb6!2m2!1d13.3721157!2d38.1169877!3e0"
+                className="flex justify-center items-center gap-3 italic text-slate-700 bg-myBlue-bgLight px-3 py-1"
+              >
+                <img src={map} alt="map" className="w-4" />
+                <p>Indicazioni stradali</p>
+              </a>
             </div>
           </div>
           <div className="2xl:w-4/12 lg:w-5/12 md:w-10/12 w-11/12">
@@ -88,14 +86,13 @@ export default function WhenWhere({ refWhenWhere }) {
                 Venerdì 5/07/2024 - 19:30 - Castello di San Nicola L'Arena, San
                 Nicola l'Arena, Palermo
               </p>
-              <div className="flex gap-20 md:gap-28">
-                <a href="http://www.castellodisannicola.it/">
-                  <img src={info} alt="info" className="w-14" />
-                </a>
-                <a href="https://www.google.it/maps/dir//Castello+San+Nicola,+l'Arena,+San+Nicola+l'Arena+PA/@38.0155572,13.6137298,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x1317575d277f63b1:0xe4f4db2eebe2264e!2m2!1d13.6158976!2d38.0155676!3e0">
-                  <img src={map} alt="map" className="w-7" />
-                </a>
-              </div>
+              <a
+                href="https://www.google.it/maps/dir//Castello+San+Nicola,+l'Arena,+San+Nicola+l'Arena+PA/@38.0155572,13.6137298,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x1317575d277f63b1:0xe4f4db2eebe2264e!2m2!1d13.6158976!2d38.0155676!3e0"
+                className="flex justify-center items-center gap-3 italic text-slate-700 bg-myBlue-bgLight px-3 py-1"
+              >
+                <img src={map} alt="map" className="w-4" />
+                <p>Indicazioni stradali</p>
+              </a>
             </div>
           </div>
         </div>
