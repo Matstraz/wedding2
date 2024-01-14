@@ -10,7 +10,7 @@ export default function Iban({ refHome }) {
     refHome.current?.scrollIntoView({ behavior: "smooth" });
   }
   function copyIban() {
-    navigator.clipboard.writeText("ITXXXXXXXXXXXXXXXXXXXXXXXXX");
+    navigator.clipboard.writeText("IT45P0306904606100000006074");
     alert("IBAN copiato");
   }
 
@@ -48,11 +48,9 @@ export default function Iban({ refHome }) {
             farci un regalo, apprezzeremmo grandemente il vostro contribuito
             nella realizzazione del nostro viaggio di nozze.
           </p>
-          <div>
+          <div className="hover:cursor-pointer" onClick={copyIban}>
             <p className="py-1">IBAN - Matteo Strazzera</p>
-            <p className="hover:cursor-pointer" onClick={copyIban}>
-              ITXXXXXXXXXXXXXXXXXXXXXXXXX
-            </p>
+            <p>IT45P0306904606100000006074</p>
           </div>
           <p className="italic text-yellow-500">
             Grazie per Lorem ipsum dolor sit amet..
