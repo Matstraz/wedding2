@@ -72,12 +72,12 @@ export default function WhenWhere({ refWhenWhere }) {
               <div className="absolute top-0 left-0 w-full h-full bg-myBlue-bgDark bg-opacity-30"></div>
             </div>
             <div className="flex flex-col justify-center items-center text-center gap-6 bg-white p-9 relative">
-              <img src={party} alt="party" className="absolute -top-7 w-24" />
+              <img src={party} alt="party" className="absolute -top-11 w-28" />
               <p className="italic text-slate-700">IL RICEVIMENTO</p>
               <p>
-                Il Castello di San Nicola L’Arena fu edificato nel XIV secolo,
-                attorno alla preesistente torre d’avvistamento di epoca
-                normanna. Anch'esso, come tutti i castelli della costa
+                Il Castello di San Nicola L&apos;Arena fu edificato nel XIV
+                secolo, attorno alla preesistente torre d&apos;avvistamento di
+                epoca normanna. Anch'esso, come tutti i castelli della costa
                 siciliana, ebbe lo scopo di proteggere quel tratto di mare dalle
                 aggressioni dei pirati turchi e saraceni che, in quei tempi,
                 avevano preso di mira le spiagge siciliane più ricche di pesca.

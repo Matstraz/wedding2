@@ -36,25 +36,23 @@ export default function Iban({ refHome }) {
             : "invisible"
         }
       >
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 items-center">
           <p>
             Cari amici e familiari, siamo lieti che vi uniate a noi per il
-            nostro grande giorno.
-            <span className="italic text-yellow-500">
-              -Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel-
-            </span>
-            e la vostra presenza sarà per noi il dono più bello. Se desideraste
-            farci un regalo, apprezzeremmo grandemente il vostro contribuito
-            nella realizzazione del nostro viaggio di nozze.
+            nostro matrimonio e la vostra presenza sarà per noi il dono più
+            bello. Se desideraste farci un regalo, apprezzeremmo il vostro
+            contributo per raggiungere la destinazione del nostro viaggio di
+            nozze.
           </p>
-          <div className="hover:cursor-pointer" onClick={copyIban}>
+          <div
+            className="hover:cursor-pointer w-fit text-lg"
+            onClick={copyIban}
+          >
             <p className="py-1">IBAN - Matteo Strazzera</p>
             <p>IT45P0306904606100000006074</p>
           </div>
-          <p className="italic text-yellow-500">
-            Grazie per Lorem ipsum dolor sit amet..
-          </p>
+          <p>Grazie per condividere con noi il nostro grande giorno!</p>
+          <p className="text-slate-600 italic text-lg">Alessandra e Matteo</p>
           <div onClick={navToHome}>{icons.goUp}</div>
         </div>
       </div>
