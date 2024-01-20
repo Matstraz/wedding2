@@ -55,7 +55,7 @@ export default function WhenWhere({ refWhenWhere }) {
               </p>
               <p className="italic text-slate-700">
                 Venerdì 5/07/2024 - 15:30 - Chiesa di Santa Maria della Pietà,
-                Piazzetta della Pietà SNC, 90133 Palermo
+                Piazzetta della Pietà SNC, Palermo
               </p>
               <a
                 href="https://www.google.it/maps/dir//Chiesa+Santa+Maria+Della+Piet%C3%A0,+Piazzetta+della+Piet%C3%A0,+Palermo,+PA/@38.1174972,13.3716383,202m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x1319e52ede184e8b:0x58413da94c6faeb6!2m2!1d13.3721157!2d38.1169877!3e0"
@@ -83,8 +83,8 @@ export default function WhenWhere({ refWhenWhere }) {
                 avevano preso di mira le spiagge siciliane più ricche di pesca.
               </p>
               <p className="italic text-slate-700">
-                Venerdì 5/07/2024 - 19:30 - Castello di San Nicola L'Arena, San
-                Nicola l'Arena, Palermo
+                Venerdì 5/07/2024 - 19:30 - Castello di San Nicola L'Arena, Via
+                Castello, San Nicola l'Arena &#40;PA&#41;
               </p>
               <a
                 href="https://www.google.it/maps/dir//Castello+San+Nicola,+l'Arena,+San+Nicola+l'Arena+PA/@38.0155572,13.6137298,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x1317575d277f63b1:0xe4f4db2eebe2264e!2m2!1d13.6158976!2d38.0155676!3e0"

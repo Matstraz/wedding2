@@ -17,7 +17,7 @@ export default function MyTimer() {
   return (
     <>
       <Waypoint onEnter={() => setAnimate(true)} />
-      <div className="flex justify-center items-center bg-myBlue-bgDark text-lg md:text-3xl">
+      <div className="flex justify-center items-center bg-myBlue-bgDark text-3xl md:text-4xl lg:text-5xl">
         <div
           className={
             animate
@@ -31,10 +31,10 @@ export default function MyTimer() {
           <p>{hours}</p>
           <p>{minutes}</p>
           <p>{seconds}</p>
-          <p>Giorni</p>
-          <p>Ore</p>
-          <p>Minuti</p>
-          <p>Secondi</p>
+          <p className="text-lg md:text-xl">Giorni</p>
+          <p className="text-lg md:text-xl">Ore</p>
+          <p className="text-lg md:text-xl">Minuti</p>
+          <p className="text-lg md:text-xl">Secondi</p>
         </div>
       </div>
     </>

@@ -32,7 +32,7 @@ export default function DesktopVersion({ animate, setAnimate }) {
         </div>
         <div className="centeredDiv">
           <img src={dinner} alt="dinner"></img>
-          <p className="text-center">19:00</p>
+          <p className="text-center">19:30</p>
         </div>
         <div className="centeredArrows">
           <img className="arrow5" src={arrow5} alt="arrow5"></img>

@@ -10,27 +10,27 @@ export default function Witnesses({ refWitnesses }) {
 
   const witnesses = [
     [
-      "Mario",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas vel sint commodi repudiandae consequuntur",
+      "Roberto",
+      "Amico di lunga data dello sposo, sono cresciuti insieme e non si sono mai persi di vista nonostante la distanza. Con gli anni, da amici sono diventati fratelli.",
     ],
     [
-      "Michele",
+      "Giusy 1",
       "eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam",
     ],
     [
-      "Giovanni",
-      " harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt ",
+      "Enrico",
+      "Da un'amicia nata fra i banchi universitari, lui e lo sposo sono diventati l'uno il testimone dell'altro, rafforzando sempre più il legame che continuerà a tenerli uniti.",
     ],
     [
-      "Fabio",
+      "Giusy 2",
       "lias error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt dolorem! Officiis iure rerum v",
     ],
     [
-      "Luigi",
-      "As a developer lorem ipsum is a dummy text to write a long textthat you don't want to write",
+      "Antonino",
+      "Amico, compare, fratello dello sposo. La loro amicizia, iniziata da una passione in comune, è cresciuta fino a farli diventare vicendevolmente testimoni e compari.",
     ],
     [
-      "Paolo",
+      "Giusy 3",
       "As a developer lorem ipsum is a dummy text to write a long textthat you don't want to write",
     ],
   ];
@@ -89,7 +89,7 @@ export default function Witnesses({ refWitnesses }) {
                 {el[1]}
               </p>
 
-              <p>{el[0]}</p>
+              <p className="text-slate-600 text-lg">{el[0]}</p>
             </div>
           ))}
         </Carousel>
