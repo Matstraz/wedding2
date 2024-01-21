@@ -19,7 +19,7 @@ export default function Witnesses({ refWitnesses }) {
     ],
     [
       "Enrico",
-      "Da un'amicia nata fra i banchi universitari, lui e lo sposo sono diventati l'uno il testimone dell'altro, rafforzando sempre più il legame che continuerà a tenerli uniti.",
+      "Da un'amicizia nata fra i banchi universitari, lui e lo sposo sono diventati l'uno il testimone dell'altro, rafforzando sempre più il legame che continuerà a tenerli uniti.",
     ],
     [
       "Giusy 2",
@@ -76,7 +76,7 @@ export default function Witnesses({ refWitnesses }) {
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
-          autoPlaySpeed={3000}
+          autoPlaySpeed={3600}
           keyBoardControl={true}
           customTransition="all .6s linear"
           transitionDuration={500}
@@ -84,10 +84,11 @@ export default function Witnesses({ refWitnesses }) {
           autoPlay={true}
         >
           {witnesses.map((el, index) => (
-            <div className="flex flex-col justify-center items-center md:px-40 lg:px-80 2xl:px-96 px-10 py-12 gap-4">
-              <p className="text-center italic" key={index}>
-                {el[1]}
-              </p>
+            <div
+              className="flex flex-col justify-center items-center md:px-40 lg:px-80 2xl:px-96 px-10 py-12 gap-4"
+              key={el + index}
+            >
+              <p className="text-center italic">{el[1]}</p>
 
               <p className="text-slate-600 text-lg">{el[0]}</p>
             </div>

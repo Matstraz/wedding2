@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../../../assets/pics/logos/Logo definitivo.png";
 import RsvpModal from "./RsvpModal";
 import icons from "../../utils/Icons";
+import RsvpModalBurger from "./RsvpModalBurger";
 
 export default function Navbar({
   refBrideGroom,
@@ -120,7 +121,6 @@ export default function Navbar({
                         I testimoni
                       </p>
                     </li>
-
                     <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
                       <p
                         onClick={() => {
@@ -130,6 +130,11 @@ export default function Navbar({
                       >
                         Il Programma
                       </p>
+                    </li>
+                    <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
+                      <div>
+                        <RsvpModalBurger setIsMenuOpen={setIsMenuOpen} />
+                      </div>
                     </li>
                   </ul>
                 </nav>
