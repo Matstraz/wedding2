@@ -24,7 +24,7 @@
 
 /* bg landing page */
 .backHome {
-  background-image: url(./assets/pics/homepage/bg_scritte_piccole.png);
+  background-image: url(./assets/pics/homepage/bg_scritte_piccole.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +32,7 @@
 
 @media all and (max-width: 767px) {
   .backHome {
-    background-image: url(./assets/pics/homepage/bg_mobile.jpg);
+    background-image: url(./assets/pics/homepage/bg_scritte_piccole.jpg);
   }
 }
 
