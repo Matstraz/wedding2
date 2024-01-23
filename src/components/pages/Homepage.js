@@ -40,7 +40,7 @@ export default function Homepage({ refHome, refBrideGroom }) {
       <div
         className={`${css(
           styles.infiniteBounce
-        )} text-black absolute bottom-16 md:bottom-0 lg:bottom-10 bottom italic borded hover:cursor-pointer`}
+        )} text-black absolute bottom-16 md:bottom-0 lg:bottom-10 bottom italic borded hover:cursor-pointer text-sm lg:text-base`}
         onClick={navToBrideGroom}
       >
         <p>Entra</p>
