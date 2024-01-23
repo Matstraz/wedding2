@@ -14,7 +14,7 @@ export default function RsvpModal() {
         src={rsvp2}
         alt="rsvp"
         className={animated ? `${css(styles.pulse)} hover:cursor-pointer` : ``}
-        width={80}
+        width={70}
         onMouseOver={() => setAnimated(true)}
         onMouseLeave={() => setAnimated(false)}
         onClick={() => setShowModal(true)}

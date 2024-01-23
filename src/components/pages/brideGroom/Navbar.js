@@ -34,7 +34,7 @@ export default function Navbar({
   return (
     <nav className="bg-white flex px-5 justify-between lg:justify-center items-center xl:gap-40 gap-28 border-b-2 stickyBar z-20 p-1 text-base">
       <a href="#home">
-        <img src={logo} alt="logo" width={50} />
+        <img src={logo} alt="logo" width={40} />
       </a>
       <ul className="hidden lg:flex justify-center text-center items-center gap-12 overflow-clip italic hover:cursor-pointer">
         <p onClick={navToHome}>HOME</p>
