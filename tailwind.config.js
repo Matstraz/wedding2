@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        myBlue: {
+        /* old color */
+        /*    myBlue: {
           bgLight: "#eef3fe",
           bgDark: "#dee8fd",
           300: "#bdd1fb",
@@ -17,6 +18,11 @@ module.exports = {
           700: "#8a9ec8",
           800: "#798aaf",
           900: "#677696",
+        }, */
+        myBlue: {
+          bgLight: "#e6f2f8",
+          bgDark: "#d3e9f3",
+          main: "#c1e0ef",
         },
       },
       screens: {
