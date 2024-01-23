@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../../assets/pics/logos/Logo definitivo.png";
+import logo from "../../../assets/pics/navbar/Logo definitivo.png";
 import RsvpModal from "./RsvpModal";
 import icons from "../../utils/Icons";
 import RsvpModalBurger from "./RsvpModalBurger";
