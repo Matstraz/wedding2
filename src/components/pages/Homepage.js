@@ -27,11 +27,11 @@ export default function Homepage({ refHome, refBrideGroom }) {
       <div className="flex flex-col gap-10">
         <Snowfall
           /*    color="grey" */
-          snowflakeCount={[40]}
+          snowflakeCount={[35]}
           images={images}
           radius={[16.0, 20.0]}
-          speed={[1.0, 2.0]}
-          wind={[-0.5, 2.0]}
+          speed={[0.5, 1.3]}
+          wind={[-0.5, 1.0]}
         />
         {/* Add next rows to switch to a backgroundless landing page */}
         {/*    <p className="alex borded text-6xl p-5 md:p-0">Alessandra & Matteo</p>
@@ -43,7 +43,6 @@ export default function Homepage({ refHome, refBrideGroom }) {
         )} text-black absolute bottom-16 md:bottom-0 lg:bottom-10 bottom italic borded hover:cursor-pointer text-sm lg:text-base`}
         onClick={navToBrideGroom}
       >
-        <p>Entra</p>
         <p>{icons.scroll}</p>
       </div>
     </div>
