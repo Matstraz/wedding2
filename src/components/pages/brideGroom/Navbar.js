@@ -78,7 +78,7 @@ export default function Navbar({
           </button>
           {isMenuOpen && (
             <div className="absolute top-14 right-0 w-full border border-slate-200 text-center">
-              <div className="p-5 bg-myBlue-300 w-full">
+              <div className="p-5 bg-myBlue-main w-full">
                 <nav>
                   <ul className="font-bold italic">
                     <li className="border-b-2 border-t-2 border-slate-200 py-3 hover:cursor-pointer">
