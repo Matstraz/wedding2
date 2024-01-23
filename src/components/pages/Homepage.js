@@ -2,19 +2,17 @@ import { css } from "aphrodite";
 import Snowfall from "react-snowfall";
 import styles from "../utils/Animations";
 import icons from "../utils/Icons";
-import leaf3 from "../../assets/pics/homepage/foglia1.png";
-import leaf4 from "../../assets/pics/homepage/foglia2.png";
-/* import oleanders from "../../assets/pics/backgrounds/flower.png"; */
+import petal1 from "../../assets/pics/homepage/foglie/petal.png";
+import leaf1 from "../../assets/pics/homepage/foglie/leaf.png";
 
 export default function Homepage({ refHome, refBrideGroom }) {
   const petals1 = document.createElement("img");
-  petals1.src = leaf3;
-  const petals2 = document.createElement("img");
-  petals2.src = leaf4;
-  /*   const flower = document.createElement("img");
-  flower.src = oleanders; */
+  petals1.src = petal1;
+  const leaves1 = document.createElement("img");
+  leaves1.src = leaf1;
 
-  const images = [petals1, petals2];
+  const images = [leaves1, petals1, petals1];
+
   /* scroll to bride/groom */
   function navToBrideGroom() {
     refBrideGroom.current?.scrollIntoView({ behavior: "smooth" });
@@ -29,9 +27,9 @@ export default function Homepage({ refHome, refBrideGroom }) {
       <div className="flex flex-col gap-10">
         <Snowfall
           /*    color="grey" */
-          snowflakeCount={40}
+          snowflakeCount={[40]}
           images={images}
-          radius={[12.0, 18.0]}
+          radius={[16.0, 20.0]}
           speed={[1.0, 2.0]}
           wind={[-0.5, 2.0]}
         />
@@ -42,7 +40,7 @@ export default function Homepage({ refHome, refBrideGroom }) {
       <div
         className={`${css(
           styles.infiniteBounce
-        )} text-black absolute bottom-24 bottom italic borded hover:cursor-pointer`}
+        )} text-black absolute bottom-16 md:bottom-0 lg:bottom-10 bottom italic borded hover:cursor-pointer`}
         onClick={navToBrideGroom}
       >
         <p>Entra</p>

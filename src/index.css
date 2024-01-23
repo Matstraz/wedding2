@@ -32,7 +32,7 @@
 
 @media all and (max-width: 767px) {
   .backHome {
-    background-image: url(./assets/pics/homepage/bg_scritte_piccole.jpg);
+    background-image: url(./assets/pics/homepage/bg_mobile.jpg);
   }
 }
 
