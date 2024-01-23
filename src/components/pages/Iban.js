@@ -52,7 +52,7 @@ export default function Iban({ refHome }) {
             <p>IT45P0306904606100000006074</p>
           </div>
           <p>Grazie per condividere con noi il nostro grande giorno!</p>
-          <p className="text-slate-600 italic text-lg">Alessandra e Matteo</p>
+          <p className="italic font-bold">Alessandra e Matteo</p>
           <div onClick={navToHome}>{icons.goUp}</div>
         </div>
       </div>

@@ -23,6 +23,7 @@ module.exports = {
           bgLight: "#e6f2f8",
           bgDark: "#d3e9f3",
           main: "#c1e0ef",
+          mainText: "#3c5466",
         },
       },
       screens: {

@@ -19,7 +19,7 @@ function App() {
   const refHome = useRef(null);
 
   return (
-    <div className="relative text-slate-500">
+    <div className="relative text-myBlue-mainText">
       <Homepage refHome={refHome} refBrideGroom={refBrideGroom} />
       <Navbar
         refBrideGroom={refBrideGroom}
