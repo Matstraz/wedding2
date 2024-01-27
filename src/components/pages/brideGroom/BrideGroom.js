@@ -39,7 +39,7 @@ export default function BrideGroom({ refBrideGroom }) {
           <div></div>
           <div className="row-span-2 flex justify-start">
             <div className="flex flex-col justify-center items-center gap-5 text-xl italic">
-              <img src={foto1} className="w-56 md:w-72" alt="foto sposo" />
+              <img src={foto1} className="w-72" alt="foto sposo" />
               <p>Matteo S.</p>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function BrideGroom({ refBrideGroom }) {
           {/* row 2 */}
           <div className="row-span-2 flex justify-end">
             <div className="flex flex-col justify-center items-center gap-5 text-xl italic">
-              <img src={foto2} className="w-56 md:w-72" alt="foto sposa" />
+              <img src={foto2} className="w-72" alt="foto sposa" />
               <p>Alessandra L.M.</p>
             </div>
           </div>
@@ -69,12 +69,12 @@ export default function BrideGroom({ refBrideGroom }) {
         }
       >
         <div className="flex flex-col justify-center items-center gap-5 text-lg italic">
-          <img src={foto1} className="w-56 md:w-72" alt="foto sposo" />
+          <img src={foto1} className="w-64" alt="foto sposo" />
           <p>Matteo S.</p>
         </div>
         <p className="text-4xl sm:text-6xl lg:text-6xl alex">&</p>
         <div className="flex flex-col justify-center items-center gap-5 text-lg italic">
-          <img src={foto2} className="w-56 md:w-72" alt="foto sposa" />
+          <img src={foto2} className="w-64" alt="foto sposa" />
           <p>Alessandra L.M.</p>
         </div>
       </div>
