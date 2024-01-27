@@ -4,6 +4,7 @@ import foto2 from "../../../assets/pics/bride-groom/foto2.png";
 import { css } from "aphrodite";
 import styles from "../../utils/Animations";
 import { Waypoint } from "react-waypoint";
+import Photostory from "./Photostory";
 
 export default function BrideGroom({ refBrideGroom }) {
   const [animate, setAnimate] = useState(false);
@@ -29,7 +30,7 @@ export default function BrideGroom({ refBrideGroom }) {
             animate
               ? `${css(
                   styles.fadeIn
-                )} grid gridSystemBrideGroom grid-rows-3 py-16 w-3/4`
+                )} grid gridSystemBrideGroom grid-rows-3 md:py-16 w-3/4`
               : "invisible"
           }
         >
@@ -63,7 +64,7 @@ export default function BrideGroom({ refBrideGroom }) {
           animate
             ? `${css(
                 styles.fadeIn
-              )} flex flex-col justify-center items-center py-16 gap-8 px-2 md:hidden`
+              )} flex flex-col justify-center items-center pt-16 pb-2 gap-8 px-2 md:hidden`
             : "invisible"
         }
       >
@@ -79,24 +80,7 @@ export default function BrideGroom({ refBrideGroom }) {
       </div>
 
       <Waypoint onEnter={() => setAnimate2(true)} />
-      <div
-        className={
-          animate2
-            ? `${css(styles.fadeIn)} text-center alex text-5xl`
-            : "invisible"
-        }
-      >
-        Are getting married
-      </div>
-      <div
-        className={
-          animate2
-            ? `${css(styles.fadeIn)} text-center text-base py-5`
-            : "invisible"
-        }
-      >
-        5 Luglio, 2024 - Palermo
-      </div>
+      <Photostory animate2={animate2} />
     </div>
   );
 }

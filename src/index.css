@@ -75,3 +75,24 @@
 .gridSystemBrideGroom {
   grid-template-columns: auto min-content auto;
 }
+
+/* photostory elements rotation */
+
+.picture1 {
+  rotate: -15deg;
+}
+.picture2 {
+  rotate: 30deg;
+}
+.picture3 {
+  rotate: 20deg;
+}
+.picture4 {
+  rotate: -22deg;
+}
+.picture5 {
+  rotate: 5deg;
+}
+.picture6 {
+  rotate: 25deg;
+}
