@@ -39,10 +39,9 @@ export default function Iban({ refHome }) {
         <div className="flex flex-col gap-8 items-center">
           <p>
             Cari amici e familiari, siamo lieti che vi uniate a noi per il
-            nostro matrimonio e la vostra presenza sarà per noi il dono più
-            bello. Se desideraste farci un regalo, apprezzeremmo il vostro
-            contributo per raggiungere la destinazione del nostro viaggio di
-            nozze.
+            nostro matrimonio e la vostra presenza sarà il dono più bello. Se
+            desideraste farci un regalo, apprezzeremmo il vostro contributo per
+            raggiungere la destinazione del nostro viaggio di nozze.
           </p>
           <div
             className="hover:cursor-pointer w-fit text-lg"
