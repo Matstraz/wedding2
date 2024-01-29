@@ -82,6 +82,7 @@ export default function Witnesses({ refWitnesses }) {
           transitionDuration={500}
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
           autoPlay={true}
+          focusOnSelect={true}
         >
           {witnesses.map((el, index) => (
             <div
