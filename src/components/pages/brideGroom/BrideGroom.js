@@ -1,6 +1,6 @@
 import { useState } from "react";
-import foto1 from "../../../assets/pics/bride-groom/foto1.png";
-import foto2 from "../../../assets/pics/bride-groom/foto2.png";
+import foto1 from "../../../assets/pics/bride-groom/groom.png";
+import foto2 from "../../../assets/pics/bride-groom/bride.png";
 import { css } from "aphrodite";
 import styles from "../../utils/Animations";
 import { Waypoint } from "react-waypoint";
@@ -11,7 +11,11 @@ export default function BrideGroom({ refBrideGroom }) {
   const [animate2, setAnimate2] = useState(false);
   const [animate3, setAnimate3] = useState(false);
   return (
-    <div className="bg-myBlue-bgLight py-20" id="newlyweds" ref={refBrideGroom}>
+    <div
+      className="bg-myBlue-bgLight pt-20 md:py-20"
+      id="newlyweds"
+      ref={refBrideGroom}
+    >
       <Waypoint onEnter={() => setAnimate3(true)} />
       <p
         className={

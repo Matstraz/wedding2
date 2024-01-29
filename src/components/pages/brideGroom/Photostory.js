@@ -1,6 +1,11 @@
 import { css } from "aphrodite";
 import styles from "../../utils/Animations";
-import placeHolderPic from "../../../assets/pics/when where/alternative castel bg.jpg";
+import pola1 from "../../../assets/pics/bride-groom/photostory/pola-01.png";
+import pola2 from "../../../assets/pics/bride-groom/photostory/pola-02.png";
+import pola3 from "../../../assets/pics/bride-groom/photostory/pola-03.png";
+import pola4 from "../../../assets/pics/bride-groom/photostory/pola-04.png";
+import pola5 from "../../../assets/pics/bride-groom/photostory/pola-05.png";
+import pola6 from "../../../assets/pics/bride-groom/photostory/pola-06.png";
 
 export default function Photostory({ animate2 }) {
   return (
@@ -9,39 +14,39 @@ export default function Photostory({ animate2 }) {
         animate2
           ? `${css(
               styles.fadeIn
-            )} flex flex-col md:flex-row justify-center items-center pt-12 md:pt-20 md:pb-16` /* text-center alex text-5xl */
+            )} flex flex-col md:flex-row justify-center items-center pb-5 md:pt-10 md:pb-16` /* text-center alex text-5xl */
           : "invisible"
       }
     >
       <img
-        src={placeHolderPic}
+        src={pola1}
         alt="pic1"
-        className="h-44 w-40 md:h-36 md:w-32 lg:h-44 lg:w-40 translate-x-14 translate-y-8 md:translate-y-20 md:translate-x-8 picture1 z-10"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-12 translate-y-16 md:translate-y-20 md:translate-x-5 picture1 z-10"
       />
       <img
-        src={placeHolderPic}
+        src={pola2}
         alt="pic2"
-        className="h-44 w-40 md:h-36 md:w-32 lg:h-44 lg:w-40 -rotate-3 -translate-x-14 md:-translate-y-12 md:-translate-x-0"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 -rotate-3 translate-y-6 -translate-x-14 md:-translate-y-12 md:-translate-x-0"
       />
       <img
-        src={placeHolderPic}
+        src={pola3}
         alt="pic3"
-        className="h-44 w-40 md:h-36 md:w-32 lg:h-44 lg:w-40 translate-x-6 md:translate-y-6 picture3 z-10 md:translate-x-0"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-6 md:translate-y-6 picture3 z-10 md:translate-x-0"
       />
       <img
-        src={placeHolderPic}
+        src={pola4}
         alt="pic4"
-        className="h-44 w-40 md:h-36 md:w-32 lg:h-44 lg:w-40 z-10 -translate-y-5 -translate-x-14 md:-translate-y-20 picture4 md:-translate-x-0"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 z-10 -translate-y-12 -translate-x-12 md:-translate-y-20 picture4 md:-translate-x-0"
       />
       <img
-        src={placeHolderPic}
+        src={pola5}
         alt="pic5"
-        className="h-44 w-40 md:h-36 md:w-32 lg:h-44 lg:w-40 translate-x-14 -translate-y-5 md:translate-y-8 md:-translate-x-5 z-10 picture5"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-14 -translate-y-20 tra md:translate-y-8 md:-translate-x-8 z-10 picture5"
       />
       <img
-        src={placeHolderPic}
+        src={pola6}
         alt="pic6"
-        className="h-44 w-40 md:h-36 md:w-32 lg:h-44 lg:w-40 bg-pink-400 translate-x-8 -translate-y-6 md:-translate-y-0 md:-translate-x-8 picture6 z-10 md:z-0"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-6 -translate-y-24 tra md:-translate-y-0 md:-translate-x-12 picture6 z-10 md:z-0"
       />
     </div>
   );
