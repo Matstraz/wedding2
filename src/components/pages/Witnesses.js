@@ -76,7 +76,7 @@ export default function Witnesses({ refWitnesses }) {
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
-          autoPlaySpeed={9000}
+          autoPlaySpeed={9500}
           keyBoardControl={true}
           customTransition="all .6s linear"
           transitionDuration={500}

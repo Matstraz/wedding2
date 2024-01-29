@@ -14,7 +14,7 @@ export default function Photostory({ animate2 }) {
         animate2
           ? `${css(
               styles.fadeIn
-            )} flex flex-col md:flex-row justify-center items-center pb-5 md:pt-10 md:pb-16` /* text-center alex text-5xl */
+            )} flex flex-col md:flex-row justify-center items-center pb-5 md:pt-16 md:pb-16` /* text-center alex text-5xl */
           : "invisible"
       }
     >
