@@ -68,16 +68,16 @@ export default function BrideGroom({ refBrideGroom }) {
           animate
             ? `${css(
                 styles.fadeIn
-              )} flex flex-col justify-center items-center pt-16 pb-2 gap-8 px-2 md:hidden`
+              )} flex flex-col justify-center items-center pt-16 pb-2 gap-9 px-2 md:hidden`
             : "invisible"
         }
       >
-        <div className="flex flex-col justify-center items-center gap-5 text-lg italic">
+        <div className="flex flex-col justify-center items-center gap-3 text-lg italic">
           <img src={foto1} className="w-64" alt="foto sposo" />
           <p>Matteo Strazzera</p>
         </div>
         <p className="text-4xl sm:text-6xl lg:text-6xl alex">&</p>
-        <div className="flex flex-col justify-center items-center gap-5 text-lg italic">
+        <div className="flex flex-col justify-center items-center gap-3 text-lg italic">
           <img src={foto2} className="w-64" alt="foto sposa" />
           <p>Alessandra La Marca</p>
         </div>
