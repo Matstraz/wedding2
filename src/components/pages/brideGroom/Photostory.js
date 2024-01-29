@@ -21,7 +21,7 @@ export default function Photostory({ animate2 }) {
       <img
         src={pola1}
         alt="pic1"
-        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-12 translate-y-16 md:translate-y-20 md:translate-x-5 picture1 z-10"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-12 translate-y-16 md:translate-y-20 md:translate-x-510 lg:translate-x-5 picture1 z-10"
       />
       <img
         src={pola2}
@@ -41,12 +41,12 @@ export default function Photostory({ animate2 }) {
       <img
         src={pola5}
         alt="pic5"
-        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-14 -translate-y-20 tra md:translate-y-8 md:-translate-x-8 z-10 picture5"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-14 -translate-y-20 tra md:translate-y-8 md:-translate-x-14 lg:-translate-x-8 z-10 picture5"
       />
       <img
         src={pola6}
         alt="pic6"
-        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-6 -translate-y-24 tra md:-translate-y-0 md:-translate-x-12 picture6 z-10 md:z-0"
+        className="h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-6 -translate-y-24 tra md:-translate-y-0 md:-translate-x-20 lg:-translate-x-12 picture6 z-10 md:z-0"
       />
     </div>
   );
