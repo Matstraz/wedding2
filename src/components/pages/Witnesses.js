@@ -10,27 +10,27 @@ export default function Witnesses({ refWitnesses }) {
 
   const witnesses = [
     [
-      "Roberto",
+      "Roberto Corica",
       "Amico di lunga data dello sposo, sono cresciuti insieme e non si sono mai persi di vista nonostante la distanza. Con gli anni, da amici sono diventati fratelli.",
     ],
     [
-      "Giusy O.",
-      "Indelebili momenti, gioe ed emozioni condivisi insieme la legano alla sposa. La lora fraterna ed indissolubile amicizia ha fatto sì che diventasserò a vicenda comari.",
+      "Giusy Oliveri",
+      "Indelebili momenti, gioe ed emozioni condivisi insieme la legano alla sposa. La lora fraterna ed indissolubile amicizia ha fatto sì che diventassero a vicenda comari.",
     ],
     [
-      "Enrico",
+      "Enrico Giordano",
       "Da un'amicizia nata fra i banchi universitari, lui e lo sposo sono diventati l'uno il testimone dell'altro, rafforzando sempre più il legame che continuerà a tenerli uniti.",
     ],
     [
-      "Giusy L.",
+      "Giusy Lombardo",
       "Collega universitaria, compagna di tirocinio, coinquilina e carissima amica della sposa. Hanno condiviso tanti momenti sostenendosi sempre a vicenda e rafforzando il loro legame, così da essere l'un l'altra testimoni di nozze.",
     ],
     [
-      "Antonino",
+      "Antonio Crivello",
       "Amico, compare, fratello dello sposo. La loro amicizia, iniziata da una passione in comune, è cresciuta fino a farli diventare vicendevolmente testimoni e compari.",
     ],
     [
-      "Giorgia",
+      "Giorgia La Marca",
       "Sorella della sposa e complice di mille avventure. Condividendo gioie e momenti felici sono cresciute insieme, sicure di esserci sempre l'una per l'altra.",
     ],
   ];

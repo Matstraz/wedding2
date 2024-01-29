@@ -56,7 +56,7 @@ export default function BrideGroom({ refBrideGroom }) {
             </div>
           </div>
 
-          <p className="text-4xl sm:text-5xl alex text-center">&</p>
+          <p className="text-4xl sm:text-5xl alex text-center px-10">&</p>
           {/* row 3 */}
           <div></div>
           <div></div>
