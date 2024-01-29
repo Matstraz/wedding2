@@ -76,7 +76,7 @@ export default function Witnesses({ refWitnesses }) {
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
-          autoPlaySpeed={3600}
+          autoPlaySpeed={7000}
           keyBoardControl={true}
           customTransition="all .6s linear"
           transitionDuration={500}
@@ -90,7 +90,6 @@ export default function Witnesses({ refWitnesses }) {
               key={el + index}
             >
               <p className="text-center italic">{el[1]}</p>
-
               <p className="text-slate-600 text-lg">{el[0]}</p>
             </div>
           ))}
