@@ -25,7 +25,7 @@ export default function Iban({ refHome }) {
           animate ? `${css(styles.fadeIn)} alex text-6xl italic` : "invisible"
         }
       >
-        Il regalo
+        Il Regalo
       </div>
       <div
         className={
