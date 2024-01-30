@@ -10,6 +10,7 @@ export default function BrideGroom({ refBrideGroom }) {
   const [animate, setAnimate] = useState(false);
   const [animate2, setAnimate2] = useState(false);
   const [animate3, setAnimate3] = useState(false);
+
   return (
     <div
       className="bg-myBlue-bgLight pt-20 md:py-20"
