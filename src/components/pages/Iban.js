@@ -50,7 +50,7 @@ export default function Iban({ refHome }) {
             <p className="py-1">IBAN - Matteo Strazzera</p>
             <p>IT45P0306904606100000006074</p>
           </div>
-          <p>Grazie per condividere con noi il nostro grande giorno!</p>
+          <p>Grazie di condividere con noi il nostro grande giorno!</p>
           <p className="italic font-bold">Alessandra e Matteo</p>
           <div onClick={navToHome}>{icons.goUp}</div>
         </div>
