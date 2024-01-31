@@ -43,7 +43,7 @@ export default function WhenWhere({ refWhenWhere }) {
                 src={churchIcon}
                 alt="churchIcon"
                 className="absolute -top-12 w-16"
-              />
+                /*   />
               <p className="italic">LA CERIMONIA</p>
               <p>
                 La chiesa di Santa Maria della Pietà è un luogo di culto
@@ -63,6 +63,35 @@ export default function WhenWhere({ refWhenWhere }) {
               >
                 <img src={map} alt="map" className="w-4" />
                 <p>Indicazioni stradali</p>
+              </a> */
+              />
+              <p className="italic">LA CERIMONIA</p>
+              <p className="text-justify">
+                La chiesa di Santa Maria della Pietà è un capolavoro barocco,
+                costruita nel 1678 dall&apos;architetto Giacomo Amato per le
+                suore domenicane che avevano il loro convento nel Palazzo
+                Abatellis. La chiesa conserva importantissime opere pittoriche
+                settecentesche che ne fanno una vera galleria di quel gusto
+                pieno, dinamico, di grande ricchezza cromatica, che fu tipico
+                del XVIII secolo. Le decorazioni a stucchi furono eseguite da
+                Giacomo e Procopio Serpotta e gli splendidi affreschi furono
+                realizzati da Guglielmo Borremans.
+              </p>
+              <div className="flex flex-col justify-center items-center gap-2">
+                <p className="italic font-bold">Ore 15:30</p>
+                <div>
+                  <p className="italic font-bold text-lg">
+                    Chiesa di Santa Maria della Pietà
+                  </p>
+                  <p className="italic ">Piazzetta della Pietà SNC, Palermo</p>
+                </div>
+              </div>
+              <a
+                href="https://www.google.it/maps/dir//Chiesa+Santa+Maria+Della+Piet%C3%A0,+Piazzetta+della+Piet%C3%A0,+Palermo,+PA/@38.1174972,13.3716383,202m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x1319e52ede184e8b:0x58413da94c6faeb6!2m2!1d13.3721157!2d38.1169877!3e0"
+                className="flex justify-center items-center gap-3 italic bg-myBlue-bgLight px-3 py-1"
+              >
+                <img src={map} alt="map" className="w-4" />
+                <p>Indicazioni stradali</p>
               </a>
             </div>
           </div>
@@ -74,18 +103,29 @@ export default function WhenWhere({ refWhenWhere }) {
             <div className="flex flex-col justify-center items-center text-center gap-6 bg-white p-9 relative">
               <img src={party} alt="party" className="absolute -top-11 w-28" />
               <p className="italic">IL RICEVIMENTO</p>
-              <p>
+              <p className="text-justify">
                 Il Castello di San Nicola L&apos;Arena fu edificato nel XIV
                 secolo, attorno alla preesistente torre d&apos;avvistamento di
-                epoca normanna. Anch'esso, come tutti i castelli della costa
-                siciliana, ebbe lo scopo di proteggere quel tratto di mare dalle
-                aggressioni dei pirati turchi e saraceni che, in quei tempi,
-                avevano preso di mira le spiagge siciliane più ricche di pesca.
+                epoca normanna. Anch&apos;esso, come tutti i castelli della
+                costa siciliana, ebbe lo scopo di proteggere quel tratto di mare
+                dalle aggressioni dei pirati turchi e saraceni che, in quei
+                tempi, avevano preso di mira le spiagge siciliane più ricche di
+                pesca. Un luogo dall&apos;atmosfera incantata dove il tempo
+                sembra essersi fermato. L&apos;incantevole cornice sul golfo di
+                Trabia regala una vista panoramica incastonata nel piccolo borgo
+                marinaro.
               </p>
-              <p className="italic font-bold">
-                Venerdì 5/07/2024 - 19:30 - Castello di San Nicola L'Arena, Via
-                Castello, San Nicola l'Arena &#40;PA&#41;
-              </p>
+              <div className="flex flex-col justify-center items-center gap-2">
+                <p className="italic font-bold">Ore 19:30</p>
+                <div>
+                  <p className="italic font-bold text-lg">
+                    Castello di San Nicola L'Arena
+                  </p>
+                  <p className="italic ">
+                    Via Castello, San Nicola l'Arena &#40;PA&#41;
+                  </p>
+                </div>
+              </div>
               <a
                 href="https://www.google.it/maps/dir//Castello+San+Nicola,+l'Arena,+San+Nicola+l'Arena+PA/@38.0155572,13.6137298,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x1317575d277f63b1:0xe4f4db2eebe2264e!2m2!1d13.6158976!2d38.0155676!3e0"
                 className="flex justify-center items-center gap-3 italic bg-myBlue-bgLight px-3 py-1"

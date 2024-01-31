@@ -86,13 +86,15 @@ export default function BrideGroom({ refBrideGroom }) {
         </div>
 
         <Waypoint onEnter={() => setAnimate2(true)} />
-        <div className="pt-14 pb-6 md:pt-0 md:pb-16 bg-myBlue-bgLight  flex justify-center items-center">
-          <p className="py-3 px-4 md:py-4 md:px-6 bg-myBlue-bgDark text-center max-w-xs md:max-w-3xl lg:max-w-7xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem.
+        <div className="pt-14 pb-6 md:pt-0 md:pb-16 bg-myBlue-bgLight flex justify-center items-center">
+          <p className="py-3 px-4 md:py-4 md:px-6 lg:py-8 lg:px-0 bg-myBlue-bgDark text-center w-full italic">
+            Galeotto fu il corso di tennis che ci ha fatto incontrare e dopo 12
+            anni eccoci qui pronti a fare il grande passo!
+            <br />
+            <br className="" />
+            Cari amici e familiari, siamo lieti di invitarvi alla celebrazione
+            del nostro matrimonio che si terrà giorno &nbsp;
+            <span className="font-bold">05 luglio 2024</span>.
           </p>
         </div>
         <Photostory animate2={animate2} />
