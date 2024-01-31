@@ -1,4 +1,4 @@
-import church from "../../assets/pics/when where/bg-church.jpg";
+import church from "../../assets/pics/when where/bg-church.png";
 import castle from "../../assets/pics/when where/bg-castle.png";
 import map from "../../assets/pics/when where/map.png";
 import churchIcon from "../../assets/pics/when where/church.png";
@@ -36,7 +36,7 @@ export default function WhenWhere({ refWhenWhere }) {
           <div className="2xl:w-4/12 lg:w-5/12 md:w-10/12 w-11/12">
             <div className="w-full relative">
               <img src={church} alt="church" className="w-full" />
-              <div className="absolute top-0 left-0 w-full h-full bg-myBlue-bgDark bg-opacity-30"></div>
+              <div className="absolute top-0 left-0 w-full h-full bg-myBlue-bgDark bg-opacity-20"></div>
             </div>
             <div className="flex flex-col justify-center text-center items-center gap-6 bg-white p-9 relative">
               <img
@@ -98,7 +98,7 @@ export default function WhenWhere({ refWhenWhere }) {
           <div className="2xl:w-4/12 lg:w-5/12 md:w-10/12 w-11/12">
             <div className="w-full relative">
               <img src={castle} alt="castle" className="w-full" />
-              <div className="absolute top-0 left-0 w-full h-full bg-myBlue-bgDark bg-opacity-30"></div>
+              <div className="absolute top-0 left-0 w-full h-full bg-myBlue-bgDark bg-opacity-20"></div>
             </div>
             <div className="flex flex-col justify-center items-center text-center gap-6 bg-white p-9 relative">
               <img src={party} alt="party" className="absolute -top-11 w-28" />

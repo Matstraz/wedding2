@@ -9,7 +9,7 @@ import pola6 from "../../../assets/pics/bride-groom/photostory/pola-06.png";
 import enlarged1 from "../../../assets/pics/bride-groom/photostory/1.jpg";
 import enlarged2 from "../../../assets/pics/bride-groom/photostory/2.jpg";
 import enlarged3 from "../../../assets/pics/bride-groom/photostory/3.jpg";
-import enlarged4 from "../../../assets/pics/bride-groom/photostory/4.jpg";
+import enlarged4 from "../../../assets/pics/bride-groom/photostory/4.png";
 import enlarged5 from "../../../assets/pics/bride-groom/photostory/5.jpg";
 import enlarged6 from "../../../assets/pics/bride-groom/photostory/6.jpg";
 import { useState } from "react";
