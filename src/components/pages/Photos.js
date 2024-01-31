@@ -4,6 +4,8 @@ import { Waypoint } from "react-waypoint";
 import styles from "../utils/Animations";
 import google from "../../assets/pics/photos/google-play.png";
 import apple from "../../assets/pics/photos/app-store.png";
+import IG from "../../assets/pics/photos/IG.png";
+import FB from "../../assets/pics/photos/FB.png";
 
 export default function Photos({ refPhotos }) {
   const [animate, setAnimate] = useState(false);
@@ -44,7 +46,7 @@ export default function Photos({ refPhotos }) {
             farete quel giorno. In questo modo ricostruiremo insieme a voi ogni
             momento della giornata.
           </p>
-          <div className="flex md:gap-8 gap-6 items-center justify-center my-1 md:py-6">
+          <div className="flex md:gap-8 gap-6 items-center justify-center py-1 md:py-6">
             <a href="https://play.google.com/store/apps/details?id=net.bodas.android.wedshoots&hl=it&gl=US">
               <img src={google} alt="google" className="w-32 md:w-40" />
             </a>
@@ -59,8 +61,21 @@ export default function Photos({ refPhotos }) {
             questo modo potrete pubblicare foto nel nostro album, creando un
             ricordo unico e indelebile che custodiremo per sempre!
             <br /> <br />
-            Codice Album: xxxxxxxxx
+            Codice Album: IT8ccd73f3
           </p>
+          <p className="w-full">
+            Non dimenticate infine di utilizzare l'hashtag&nbsp;
+            <span className="font-bold">#alessandraematteo</span>&nbsp; nel
+            condividere foto/storie e di taggarci sui nostri profili social.
+          </p>
+          <div className="flex md:gap-12 gap-6 items-center justify-center pt-2 lg:pt-6">
+            <a href="https://www.instagram.com/alessandra.la.marca?utm_source=qr&igsh=NjJkajB1Mjh6bHp3">
+              <img src={IG} alt="google" className="w-14 md:w-16" />
+            </a>
+            <a href="https://www.facebook.com/alessandra.lamarca.9">
+              <img src={FB} alt="apple" className="w-14 md:w-16" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
