@@ -10,6 +10,7 @@ export default function Navbar({
   refWitnesses,
   refTimeline,
   refHome,
+  refPhotos,
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,6 +31,9 @@ export default function Navbar({
   function navToTimeline() {
     refTimeline.current?.scrollIntoView({ behavior: "smooth" });
   }
+  function navToPhotos() {
+    refPhotos.current?.scrollIntoView({ behavior: "smooth" });
+  }
 
   return (
     <nav className="bg-white flex px-5 justify-between lg:justify-center items-center xl:gap-40 gap-28 border-b-2 stickyBar z-20 p-1 text-base">
@@ -42,6 +46,7 @@ export default function Navbar({
         <p onClick={navToWhenWhere}>DOVE/QUANDO</p>
         <p onClick={navToWitnesses}>I TESTIMONI</p>
         <p onClick={navToTimeline}>IL PROGRAMMA</p>
+        <p onClick={navToPhotos}>LE FOTO</p>
       </ul>
       <div className="flex justify-center items-center gap-4">
         <RsvpModal />
@@ -98,7 +103,7 @@ export default function Navbar({
                           navToBrideGroom();
                         }}
                       >
-                        Gli sposi
+                        Gli Sposi
                       </p>
                     </li>
                     <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
@@ -118,7 +123,7 @@ export default function Navbar({
                           navToWitnesses();
                         }}
                       >
-                        I testimoni
+                        I Testimoni
                       </p>
                     </li>
                     <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
@@ -129,6 +134,16 @@ export default function Navbar({
                         }}
                       >
                         Il Programma
+                      </p>
+                    </li>
+                    <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">
+                      <p
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          navToPhotos();
+                        }}
+                      >
+                        Le Foto
                       </p>
                     </li>
                     <li className="border-b-2 border-slate-200 py-3 hover:cursor-pointer">

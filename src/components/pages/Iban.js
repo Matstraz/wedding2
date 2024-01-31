@@ -6,6 +6,7 @@ import icons from "../utils/Icons";
 
 export default function Iban({ refHome }) {
   const [animate, setAnimate] = useState(false);
+  const [animate2, setAnimate2] = useState(false);
   function navToHome() {
     refHome.current?.scrollIntoView({ behavior: "smooth" });
   }
@@ -16,7 +17,7 @@ export default function Iban({ refHome }) {
 
   return (
     <div
-      className="bg-myBlue-bgDark py-14 flex flex-col items-center"
+      className="bg-myBlue-bgLight py-20 flex flex-col items-center"
       id="gift"
     >
       <Waypoint onEnter={() => setAnimate(true)} />
@@ -27,9 +28,10 @@ export default function Iban({ refHome }) {
       >
         Il Regalo
       </div>
+      <Waypoint onEnter={() => setAnimate2(true)} />
       <div
         className={
-          animate
+          animate2
             ? `${css(
                 styles.fadeIn
               )} pt-12 flex justify-center items-center text-center w-11/12 px-3 lg:w-2/3`

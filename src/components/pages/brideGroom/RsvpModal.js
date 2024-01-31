@@ -23,9 +23,9 @@ export default function RsvpModal() {
       {showModal ? (
         <>
           <div className="justify-center items-center flex fixed inset-0 z-50 cursor-default px-2">
-            <div className=" my-10 mx-auto max-w-md bg-myBlue-bgLight p-3">
+            <div className=" my-10 mx-auto max-w-md bg-myBlue-bgDark p-3">
               {/*content*/}
-              <div className="rounded-lg max-w-3xl bg-myBlue-bgLight w-full p-4 text-center relative italic border-4 border-myBlue-bgDark border-double ">
+              <div className="rounded-lg max-w-3xl bg-myBlue-bgDark w-full p-4 text-center relative italic border-4 border-myBlue-bgLight border-double ">
                 <button
                   aria-label="Close Menu"
                   title="Close Menu"
