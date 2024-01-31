@@ -22,7 +22,7 @@ export default function WhenWhere({ refWhenWhere }) {
             : "invisible"
         }
       >
-        Dove & Quando
+        Dove &nbsp;e&nbsp; Quando
       </div>
       <Waypoint onEnter={() => setAnimate(true)} />
       <div
@@ -44,7 +44,7 @@ export default function WhenWhere({ refWhenWhere }) {
                 alt="churchIcon"
                 className="absolute -top-12 w-16"
               />
-              <p className="italic font-bold">LA CERIMONIA</p>
+              <p className="italic">LA CERIMONIA</p>
               <p>
                 La chiesa di Santa Maria della Pietà è un luogo di culto
                 cattolico barocco di Palermo è opera dell'architetto Giacomo
@@ -73,7 +73,7 @@ export default function WhenWhere({ refWhenWhere }) {
             </div>
             <div className="flex flex-col justify-center items-center text-center gap-6 bg-white p-9 relative">
               <img src={party} alt="party" className="absolute -top-11 w-28" />
-              <p className="italic font-bold">IL RICEVIMENTO</p>
+              <p className="italic">IL RICEVIMENTO</p>
               <p>
                 Il Castello di San Nicola L&apos;Arena fu edificato nel XIV
                 secolo, attorno alla preesistente torre d&apos;avvistamento di
