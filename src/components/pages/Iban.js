@@ -39,7 +39,7 @@ export default function Iban({ refHome }) {
         }
       >
         <div className="flex flex-col gap-8 items-center">
-          <p>
+          <p className="text-justify">
             Cari amici e familiari, siamo lieti che vi uniate a noi per il
             nostro matrimonio e la vostra presenza sarà il dono più bello. Se
             desideraste farci un regalo, apprezzeremmo il vostro contributo per
