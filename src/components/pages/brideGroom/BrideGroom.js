@@ -10,6 +10,7 @@ export default function BrideGroom({ refBrideGroom }) {
   const [animate, setAnimate] = useState(false);
   const [animate2, setAnimate2] = useState(false);
   const [animate3, setAnimate3] = useState(false);
+  const [enlarged, setEnlarged] = useState(null);
 
   return (
     <div>
@@ -86,7 +87,13 @@ export default function BrideGroom({ refBrideGroom }) {
         </div>
 
         <Waypoint onEnter={() => setAnimate2(true)} />
-        <div className="pt-14 pb-6 md:pt-0 md:pb-16 bg-myBlue-bgLight flex justify-center items-center">
+        <div
+          className={
+            enlarged
+              ? "pt-14 pb-6 md:pt-0 md:pb-12 bg-myBlue-bgLight flex flex-col justify-center items-center"
+              : "pt-14 pb-0 md:pt-0 md:pb-12 bg-myBlue-bgLight flex flex-col justify-center items-center"
+          }
+        >
           <p className="py-3 px-4 md:py-4 md:px-6 lg:py-8 lg:px-0 bg-myBlue-bgDark text-center w-full italic">
             Galeotto fu il corso di tennis che ci ha fatto incontrare e dopo 12
             anni eccoci qui pronti a fare il grande passo!
@@ -96,8 +103,15 @@ export default function BrideGroom({ refBrideGroom }) {
             del nostro matrimonio che si terrà giorno &nbsp;
             <span className="font-bold">05 luglio 2024</span>.
           </p>
+          <div id="topPage" className="invisible">
+            asd
+          </div>
         </div>
-        <Photostory animate2={animate2} />
+        <Photostory
+          animate2={animate2}
+          enlarged={enlarged}
+          setEnlarged={setEnlarged}
+        />
       </div>
     </div>
   );

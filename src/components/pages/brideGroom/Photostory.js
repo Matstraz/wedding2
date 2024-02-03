@@ -12,34 +12,40 @@ import enlarged3 from "../../../assets/pics/bride-groom/photostory/3.jpg";
 import enlarged4 from "../../../assets/pics/bride-groom/photostory/4.png";
 import enlarged5 from "../../../assets/pics/bride-groom/photostory/5.jpg";
 import enlarged6 from "../../../assets/pics/bride-groom/photostory/6.jpg";
-import { useState } from "react";
 
-export default function Photostory({ animate2 }) {
-  const [enlarged, setEnlarged] = useState(null);
-
+export default function Photostory({ animate2, enlarged, setEnlarged }) {
   return (
     <div
-      id="topPage"
       className={
         enlarged
           ? `${css(
               styles.fadeIn
-            )} flex flex-col md:flex-row justify-center items-center pb-8 pt-8 md:pt-0 md:pb-0 lg:pt-0 lg:pb-0`
+            )} flex flex-col md:flex-row justify-center items-center pb-14 pt-0 md:pt-0 md:pb-0 lg:pt-0 lg:pb-0`
           : animate2
           ? `${css(
               styles.fadeIn
-            )} flex flex-col md:flex-row justify-center items-center pb-5 md:pt-16 md:pb-16 lg:pt-20 lg:pb-20` /* text-center alex text-5xl */
+            )} flex flex-col md:flex-row justify-center items-center pb-5 md:pt-16 md:pb-16 lg:pt-20 lg:pb-20`
           : `invisible`
       }
     >
       {/* Enlarger */}
       {enlarged && (
-        <img
-          className="w-11/12 md:w-3/12 border-white border-8 cursor-zoom-out"
-          src={enlarged}
-          alt="enlarged pic"
-          onClick={() => setEnlarged(null)}
-        />
+        <div className="relative flex justify-center items-center w-11/12 md:w-5/12 lg:w-3/12">
+          <img
+            className="w-full border-white border-8 cursor-zoom-out"
+            src={enlarged}
+            alt="enlarged pic"
+            onClick={() => setEnlarged(null)}
+          />
+          <button
+            aria-label="Close Menu"
+            title="Close Menu"
+            className="absolute text-xs lg:text-base top-3 right-3 text-myBlue-mainText bg-myBlue-main border-myBlue-mainText border-2 rounded-full lg:px-2 px-1"
+            onClick={() => setEnlarged(null)}
+          >
+            X
+          </button>
+        </div>
       )}
 
       {/* Normal view */}
@@ -50,7 +56,7 @@ export default function Photostory({ animate2 }) {
           className={
             enlarged
               ? `hidden`
-              : `h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-12 translate-y-16 md:translate-y-20 md:translate-x-510 lg:translate-x-5 picture1 z-10 cursor-zoom-in`
+              : `h-48 w-44 md:h-36 md:w-32 lg:h-48 lg:w-44 translate-x-12 translate-y-16 md:translate-y-20 md:translate-x-510 lg:translate-x-5 picture1 z-10 cursor-zoom-in`
           }
           onClick={() => setEnlarged([enlarged1])}
         />
@@ -62,7 +68,7 @@ export default function Photostory({ animate2 }) {
           className={
             enlarged
               ? `hidden`
-              : "h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 -rotate-3 translate-y-6 -translate-x-14 md:-translate-y-12 md:-translate-x-0 cursor-zoom-in"
+              : "h-48 w-44 md:h-36 md:w-32 lg:h-48 lg:w-44 -rotate-3 translate-y-6 -translate-x-14 md:-translate-y-12 md:-translate-x-0 cursor-zoom-in"
           }
           onClick={() => setEnlarged([enlarged2])}
         />
@@ -74,7 +80,7 @@ export default function Photostory({ animate2 }) {
           className={
             enlarged
               ? `hidden`
-              : "h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-6 md:translate-y-6 picture3 z-10 md:translate-x-0 cursor-zoom-in"
+              : "h-48 w-44 md:h-36 md:w-32 lg:h-48 lg:w-44 translate-x-6 md:translate-y-6 picture3 z-10 md:translate-x-0 cursor-zoom-in"
           }
           onClick={() => setEnlarged([enlarged3])}
         />
@@ -86,7 +92,7 @@ export default function Photostory({ animate2 }) {
           className={
             enlarged
               ? `hidden`
-              : "h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 z-10 -translate-y-12 -translate-x-12 md:-translate-y-20 picture4 md:-translate-x-0 cursor-zoom-in"
+              : "h-48 w-44 md:h-36 md:w-32 lg:h-48 lg:w-44 z-10 -translate-y-12 -translate-x-12 md:-translate-y-20 picture4 md:-translate-x-0 cursor-zoom-in"
           }
           onClick={() => setEnlarged([enlarged4])}
         />
@@ -98,7 +104,7 @@ export default function Photostory({ animate2 }) {
           className={
             enlarged
               ? `hidden`
-              : "h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-14 -translate-y-20 tra md:translate-y-8 md:-translate-x-14 lg:-translate-x-8 z-10 picture5 cursor-zoom-in"
+              : "h-48 w-44 md:h-36 md:w-32 lg:h-48 lg:w-44 translate-x-14 -translate-y-20 tra md:translate-y-8 md:-translate-x-14 lg:-translate-x-8 z-10 picture5 cursor-zoom-in"
           }
           onClick={() => setEnlarged([enlarged5])}
         />
@@ -110,7 +116,7 @@ export default function Photostory({ animate2 }) {
           className={
             enlarged
               ? `hidden`
-              : "h-48 w-44 md:h-40 md:w-44 lg:h-48 lg:w-44 translate-x-6 -translate-y-24 tra md:-translate-y-0 md:-translate-x-20 lg:-translate-x-12 picture6 z-10 md:z-0 cursor-zoom-in"
+              : "h-48 w-44 md:h-36 md:w-32 lg:h-48 lg:w-44 translate-x-6 -translate-y-24 tra md:-translate-y-0 md:-translate-x-20 lg:-translate-x-12 picture6 z-10 md:z-0 cursor-zoom-in"
           }
           onClick={() => setEnlarged([enlarged6])}
         />
