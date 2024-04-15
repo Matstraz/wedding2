@@ -56,10 +56,10 @@ export default function Photos({ refPhotos }) {
           </div>
           <p>
             Aprite l'applicazione dal vostro smartphone, inserite il vostro nome
-            ed il codice dell'album o scannerizzate il QR code presente sul
-            retro del segnaposto che troverete sul tavolo durante la cena. In
-            questo modo potrete pubblicare foto nel nostro album, creando un
-            ricordo unico e indelebile che custodiremo per sempre!
+            ed il codice dell'album o scannerizzate il QR code che troverete sul
+            tavolo durante la cena. In questo modo potrete pubblicare foto nel
+            nostro album, creando un ricordo unico e indelebile che custodiremo
+            per sempre!
             <br /> <br />
             Codice Album: IT8ccd73f3
           </p>

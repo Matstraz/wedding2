@@ -14,6 +14,14 @@ export default function Witnesses({ refWitnesses }) {
       "Amico di lunga data dello sposo, sono cresciuti insieme e non si sono mai persi di vista nonostante la distanza. Con gli anni, da amici sono diventati fratelli.",
     ],
     [
+      "Giorgia La Marca",
+      "Sorella della sposa e complice di mille avventure. Condividendo gioie e momenti felici sono cresciute insieme, sicure di esserci sempre l'una per l'altra.",
+    ],
+    [
+      "Antonio Crivello",
+      "Amico fraterno e compare dello sposo. La loro amicizia, iniziata da una passione in comune, è cresciuta fino a farli diventare vicendevolmente testimoni e compari.",
+    ],
+    [
       "Giusy Oliveri",
       "Indelebili momenti, gioe ed emozioni condivisi insieme la legano alla sposa. La lora fraterna ed indissolubile amicizia ha fatto sì che diventassero a vicenda comari.",
     ],
@@ -24,14 +32,6 @@ export default function Witnesses({ refWitnesses }) {
     [
       "Giusy Lombardo",
       "Collega universitaria, compagna di tirocinio, coinquilina e carissima amica della sposa. Hanno condiviso tanti momenti sostenendosi sempre a vicenda e rafforzando il loro legame, così da essere l'un l'altra testimoni di nozze.",
-    ],
-    [
-      "Antonio Crivello",
-      "Amico, compare, fratello dello sposo. La loro amicizia, iniziata da una passione in comune, è cresciuta fino a farli diventare vicendevolmente testimoni e compari.",
-    ],
-    [
-      "Giorgia La Marca",
-      "Sorella della sposa e complice di mille avventure. Condividendo gioie e momenti felici sono cresciute insieme, sicure di esserci sempre l'una per l'altra.",
     ],
   ];
   const responsive = {

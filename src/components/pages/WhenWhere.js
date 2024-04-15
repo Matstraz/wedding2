@@ -1,6 +1,7 @@
 import church from "../../assets/pics/when where/bg-church.png";
 import castle from "../../assets/pics/when where/bg-castle.png";
 import map from "../../assets/pics/when where/map.png";
+import car from "../../assets/pics/when where/car.png";
 import churchIcon from "../../assets/pics/when where/church.png";
 import party from "../../assets/pics/when where/party.png";
 import { useState } from "react";
@@ -126,13 +127,22 @@ export default function WhenWhere({ refWhenWhere }) {
                   </p>
                 </div>
               </div>
-              <a
-                href="https://www.google.it/maps/dir//Castello+San+Nicola,+l'Arena,+San+Nicola+l'Arena+PA/@38.0155572,13.6137298,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x1317575d277f63b1:0xe4f4db2eebe2264e!2m2!1d13.6158976!2d38.0155676!3e0"
-                className="flex justify-center items-center gap-3 italic bg-myBlue-bgLight px-3 py-1"
-              >
-                <img src={map} alt="map" className="w-4" />
-                <p>Indicazioni stradali</p>
-              </a>
+              <div className="flex flex-col md:flex-row justify-center items-center gap-3 italic">
+                <a
+                  href="https://www.google.it/maps/dir//Castello+San+Nicola,+l'Arena,+San+Nicola+l'Arena+PA/@38.0155572,13.6137298,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x1317575d277f63b1:0xe4f4db2eebe2264e!2m2!1d13.6158976!2d38.0155676!3e0"
+                  className="flex justify-center items-center gap-3 italic bg-myBlue-bgLight px-3 py-1"
+                >
+                  <img src={map} alt="map" className="w-4" />
+                  <p>Indicazioni stradali</p>
+                </a>
+                <a
+                  href="https://www.google.it/maps/dir//38.0149303,13.614697/@38.014965,13.6147573,19.43z/data=!4m2!4m1!3e3?entry=ttu"
+                  className="flex justify-center items-center gap-3 italic bg-myBlue-bgLight px-3 py-1 w-full md:w-auto"
+                >
+                  <img src={car} alt="car" className="w-7" />
+                  <p>Parcheggio</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
